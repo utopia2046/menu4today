@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 今天吃啥 Menu for Today
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+圆石曰：吾日三省吾身，早饭吃啥？午饭吃啥？晚饭吃啥？
 
-## Available Scripts
+虽然会做的饭菜不少，但是面对娃的人生终极提问，往往想不起来多少，总在几个家常菜之间重复。用这个小应用帮自己管理菜谱，自动生成满足筛选需求的菜单，再也不用面对“今天吃啥”头痛。
 
-In the project directory, you can run:
+## 场景
 
-### `npm start`
+- 一人食；1人，一菜，面或粉
+- 小家日常：2-4人，两菜一汤或三菜
+- 小型聚会：5-7人，菜数=人数-1，有一个够硬的主菜，有一个烩菜或汤，可以有一两个凉菜
+- 大型家宴：8-10人，一两个分量够大的主菜，可以有两三个热炒，两三个凉菜，有一个烩菜或汤
+- 周末计划：生成指定天数(1或2天)早午晚三餐
+- 工作日盒饭：生成指定天数（默认5天）的盒饭菜单，可以要求一周餐餐不重复或主菜不重复
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 需求
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 自动产生满足搭配条件的菜单和购物清单
+- 生成购物清单和预处理清单
+- 可手动添加或删除菜品，自动更新购物清单
+- 可以输入家里现有食材限制搜索范围
+- 可以选择特殊需求，有或无特定标签，无某种食材（高血糖，牙不好，不吃蘑菇或香菜，少盐少油少辣），产生的菜谱中至少要为有忌口的人提供两种以上选择
+- 尽量覆盖多种蔬菜和不同营养元素种类
 
-### `npm test`
+### 搭配条件
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 两菜以上时主料不重复，味型尽量不同
+- 三菜以上时尽量用不同厨具以缩短烹饪时间
 
-### `npm run build`
+### 用户偏好
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+星标某菜品，提高它的出现概率
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 菜品标签
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 减肥餐：可以勾选减肥餐，只返回低脂少糖的菜品
+- 忌口：不喜欢某种食材，不返回含这种食材的全部菜品
+- 按烹饪方式排除：例如不要有油炸步骤的菜
+- 暂时排除：（记录历史菜谱？待定），指定时间内（如一周）不重复
+- 厨具限制：不含某种厨具，比如烤箱
+- 蔬菜可以有时令信息，如春笋或韭菜限春天，羊肉限秋冬（按当前日期模糊范围？）
 
-### `npm run eject`
+### 数据结构
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+返回的菜单包含
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [1, *) Meal 早餐/午餐/晚餐
+  - [0, *) 主食：米饭，米粉，面条，馒头，饼，包子，饺子，麻食，三明治，披萨，粥，...
+  - [0, *) 炒菜：
+  - [0, *) 凉菜
+  - [0, *) 汤
+- 原料清单
+  - 各项主料，数量，做哪个菜用的
+  - 各项辅料
+- 预处理清单
+  - 要提前腌制，炖或发酵的
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 数据获得
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 自己直接写 json
+- 写一个编辑界面添加和编辑菜谱
+- 爬网站
+- 转电子书
 
-## Learn More
+### 菜谱格式
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 菜名
+- 主料：名称，数量
+- 辅料：名称，数量（万能的“适量”, ^-^）
+- 准备时长：包含食材预处理，腌制，发酵等等
+- 烹饪时长：实际操作时长
+- 预处理步骤
+- 操作步骤
+- 厨具
+- 标签：川菜，鲁菜，粤菜，异域料理，低脂，低糖，血糖友好，咀嚼省力，可预制，微波炉友好
+- 分类：素菜，荤素，硬菜，凉菜，汤菜，适合季节
+- 警告：宽油预警，油炸劝退，高辣危险，社交不友好/口气预警（葱蒜韭含量高），小众厨具（空气炸锅，三明治机），刀工劝退（豆腐丝，腰花），手残劝退（蛋饺，omelette），小众食材（特种奶酪，野生菌，罕见辅料或调料等等）
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 食材原料格式
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 名称
+- 分类
+- 标签：高纤维，低脂，高脂，低糖，高糖，低GI值（血糖友好），高GI值，季节
+- 营养信息：每100克含热量，糖，脂肪
