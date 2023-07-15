@@ -131,6 +131,10 @@
     ],
     "resetMocks": true
   },
+  "globals": {
+    "NodeJS": true
+  },
+  "parser": "@babel/eslint-parser",
   "babel": {
     "presets": [
       "react-app"
