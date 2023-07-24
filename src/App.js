@@ -1,5 +1,5 @@
 import './App.css';
-import './peopleSelect';
+import MealSelection from './mealSelect';
 import PeopleSelection from './peopleSelect';
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       </header>
       <ul className="Query-section">
         <li><PeopleSelection /></li>
+        <li><MealSelection /></li>
       </ul>
       <div className="Menu-section">
-
       </div>
     </div>
   );
