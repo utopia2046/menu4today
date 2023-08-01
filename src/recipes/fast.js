@@ -18,12 +18,12 @@ export const fastFoods = [
                 "amount": "葱花少许",
             },
         ],
-        "prepDur": "5 分钟",
+        "prepDurInMin": 5,
         "prepSteps": [
             "西红柿划破外皮，在开水中烫一下，捞出后撕掉外皮，去蒂切成块",
             "鸡蛋加少许盐打散",
         ],
-        "cookDur": "3 分钟",
+        "cookDurInMin": 3,
         "cookSteps": [
             "大火烧热锅，倒油，下蛋液，待起泡后用筷子拨散乘出待用",
             "葱花炝锅，倒入西红柿，快速翻炒，加入鸡蛋，盐，至西红柿断生即可出锅",
