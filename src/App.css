@@ -1,5 +1,33 @@
 .App {
   text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  max-width: 800px;
+  min-width: 400px;
+}
+
+ul.query-section {
+  list-style-type: none;
+}
+
+.query-section {
+  background-color: antiquewhite;
+  padding: 20px;
+  width: 90%;
+}
+
+.section-container {
+  margin-bottom: 20px;
+}
+
+.section-label {
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+
+.people-select {
+  width: 100%;
 }
 
 .App-logo {

@@ -5,7 +5,7 @@ function MealSelection(props) {
     }
 
     const mealsList = props.meals.map(meal =>
-        <div key={meal.id} className="meal-container" >
+        <div key={meal.id} className="meal-container query-line" >
             <span>
                 <select defaultValue={meal.type} onChange={(evt) => props.onUpdateMeal(meal.id, evt.target.value)}>
                     <option value="breakfast">早饭</option>
@@ -14,16 +14,16 @@ function MealSelection(props) {
                 </select>
             </span>
             <span>
-                <button onClick={() => props.onRemoveMeal(meal.id)}>取消</button>
+                <button className="query-button" onClick={() => props.onRemoveMeal(meal.id)}>取消</button>
             </span>
         </div>
     );
 
     return (
-        <div className="meal-select-container">
-            <label>计划几顿？</label>
+        <div className="meal-select-container section-container">
+            <label className="section-label">计划几顿？</label>
             {mealsList}
-            <button onClick={addMeal}>添加</button>
+            <button className="query-button" onClick={addMeal}>添加</button>
         </div>
     );
 }

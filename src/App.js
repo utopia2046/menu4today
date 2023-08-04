@@ -16,6 +16,7 @@ function App() {
         setPeople(option);
     }
 
+    // meal functions
     function newMeal() {
         return {
             id: 'meal-' + nanoid(),
@@ -24,7 +25,7 @@ function App() {
     }
 
     function addMeal() {
-        setMeals([...meals, newMeal()])
+        setMeals([...meals, newMeal()]);
     }
 
     function updateMeal(id, newType) {
@@ -34,14 +35,48 @@ function App() {
             }
             return meal;
         });
+
         setMeals(updatedMeals);
     }
 
     function removeMeal(id) {
         const remainingMeals = meals.filter((meal) => id !== meal.id);
+
         setMeals(remainingMeals);
     }
 
+    // filter functions
+    function newFilter() {
+        return {
+            id: 'filter-' + nanoid(),
+            by: 'byTitle',
+            op: 'contains',
+            value: ''
+        }
+    }
+
+    function addFilter() {
+        setFilters([...filters, newFilter()]);
+    }
+
+    function updateFilter(newFilter) {
+        const updatedFilters = filters.map((filter) => {
+            if (filter.id === newFilter.id) {
+                return newFilter;
+            }
+            return filter;
+        });
+        
+        setFilters(updatedFilters);
+    }
+
+    function removeFilter(id) {
+        const remainingFilters = filters.filter((filter) => id !== filter.id);
+
+        setFilters(remainingFilters);
+    }
+
+    // render
     return (
         <div className="App">
             <h1>今天吃啥？</h1>
@@ -62,11 +97,16 @@ function App() {
                     />
                 </li>
                 <li>
-                    <FilterEdit />
+                    <FilterEdit
+                        filters={filters}
+                        onUpdateFilter={updateFilter}
+                        onAddFilter={addFilter}
+                        onRemoveFilter={removeFilter}
+                    />
                 </li>
             </ul>
 
-            <div><button onClick={generateMenu}>生成</button></div>
+            <div><button className="query-button" onClick={generateMenu}>生成</button></div>
 
             <div className="menu-section">
             </div>
