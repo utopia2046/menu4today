@@ -106,7 +106,7 @@ function App() {
                 </li>
             </ul>
 
-            <div><button className="query-button" onClick={generateMenu}>生成</button></div>
+            <button className="generate-button" onClick={generateMenu}>生成</button>
 
             <div className="menu-section">
             </div>

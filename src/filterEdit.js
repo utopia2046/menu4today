@@ -39,8 +39,8 @@ function Filter(props) {
 
     return (
         <div key={props.id} className="filter-container query-line">
-            <span>
-                <select defaultValue={props.by} onChange={(evt) => filterByChange(evt)}>
+            <span className="flex-fixed">
+                <select className="filter-by-select" defaultValue={props.by} onChange={(evt) => filterByChange(evt)}>
                     <option value="byTitle">菜名</option>
                     <option value="byIngredient">食材</option>
                     <option value="byCategory">类别</option>
@@ -49,17 +49,17 @@ function Filter(props) {
                     <option value="byCookDur">烹饪时长</option>
                 </select>
             </span>
-            <span>
-                <select defaultValue={props.op} onChange={(evt) => filterOpChange(evt)}>
+            <span className="flex-fixed">
+                <select className="filter-op-select" defaultValue={props.op} onChange={(evt) => filterOpChange(evt)}>
                     {isText && <option value="contains">包含</option>}
                     {isText && <option value="notContain">不包含</option>}
                     {!isText && <option value="lessThan">少于</option>}
                 </select>
             </span>
-            <span>
-                <input type="text" value={props.value} onChange={(evt) => filterValueChange(evt)} />
+            <span className="flex-expand">
+                <input type="text" className="filter-value-input" value={props.value} onChange={(evt) => filterValueChange(evt)} />
             </span>
-            <span>
+            <span className="flex-fixed">
                 <button className="query-button" onClick={() => props.onRemoveFilter(props.id)}>删除</button>
             </span>
         </div>
