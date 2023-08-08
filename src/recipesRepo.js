@@ -1,6 +1,27 @@
 import { union } from "underscore";
-import fastFoods from "./recipes/fast";
+import { homemade } from "./recipes/home";
 
-export const getAllRecipes = () => {
-    return union(fastFoods);
+function getAllRecipes() {
+    return union(homemade);
 }
+
+function getRecipes(number, category, filters) {
+    return [];
+}
+
+function getMeal(peopleSize, mealType, filters) {
+    return [];
+}
+
+function getMeals(peopleSize, meals, filters) {
+    return [];
+}
+
+const RecipesRepo = {
+    getAllRecipes,
+    getRecipes,
+    getMeal,
+    getMeals
+};
+
+export default RecipesRepo;

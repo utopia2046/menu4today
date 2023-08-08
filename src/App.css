@@ -2,15 +2,18 @@
   text-align: center;
   width: 80%;
   margin-left: 10%;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
   max-width: 800px;
   min-width: 400px;
-  background-color: antiquewhite;
+  background-color: #e8e4d9;
+  background-image: url("Head.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .App h1 {
-  color: #038C7F;
+  color: #499D91;
   font-size: 24px;
   font-weight: bold;
 }
@@ -20,13 +23,13 @@
   display: flex;
   flex-direction: column;
   padding: 20px 40px 0px;
-  background-color: #A9D9D0;
+  background-color: #e8e4d9;
   font-size: 12px;
   margin: 0;
 }
 
 .section-container {
-  border: 1px solid #038C7F;
+  border: 1px solid #499D91;
   margin-bottom: 20px;
 }
 
@@ -34,7 +37,7 @@
   text-align: left;
   display: block;
   padding: 4px;
-  background-color: #038C7F;
+  background-color: #499D91;
   color: white;
   font-size: 14px;
 }
@@ -94,9 +97,9 @@
 }
 
 .generate-button {
-  width: 100%;
+  width: 60%;
   height: 48px;
-  background-color: #038C7F;
+  background-color: #499D91;
   border: none;
   color: white;
   font-size: 14px;

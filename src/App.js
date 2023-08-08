@@ -4,13 +4,16 @@ import './App.css';
 import FilterEdit from './filterEdit';
 import MealSelection from './mealSelect';
 import PeopleSelection from './peopleSelect';
+import RecipesRepo from './recipesRepo';
 
 function App() {
     const [people, setPeople] = useState('small');
     const [meals, setMeals] = useState([newMeal()]);
     const [filters, setFilters] = useState([]);
 
-    function generateMenu() {}
+    function generateMenu() {
+        const menus = RecipesRepo.getMeals(people, meals, filters);
+    }
 
     function getPeople(option) {
         setPeople(option);

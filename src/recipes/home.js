@@ -1,6 +1,6 @@
-export const fastFoods = [
+export const homemade = [
     {
-        "id": "fast001",
+        "id": "home001",
         "name": "西红柿炒鸡蛋",
         "ingrds0": [
             {
