@@ -1,25 +1,29 @@
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
-import './App.css';
+import RecipesRepo from '../recipesRepo';
+import '../res/App.css';
 import FilterEdit from './filterEdit';
 import MealSelection from './mealSelect';
+import Menu from './menu';
 import PeopleSelection from './peopleSelect';
-import RecipesRepo from './recipesRepo';
 
 function App() {
     const [people, setPeople] = useState('small');
     const [meals, setMeals] = useState([newMeal()]);
     const [filters, setFilters] = useState([]);
+    const [menus, setMenus] = useState([]);
 
     function generateMenu() {
-        const menus = RecipesRepo.getMeals(people, meals, filters);
+        const newMenus = RecipesRepo.getMeals(people, meals, filters);
+
+        setMenus(newMenus);
     }
 
     function getPeople(option) {
         setPeople(option);
     }
 
-    // meal functions
+    // #region meal functions
     function newMeal() {
         return {
             id: 'meal-' + nanoid(),
@@ -47,8 +51,9 @@ function App() {
 
         setMeals(remainingMeals);
     }
+    // #endregion meal functions
 
-    // filter functions
+    // #region filter functions
     function newFilter() {
         return {
             id: 'filter-' + nanoid(),
@@ -78,13 +83,14 @@ function App() {
 
         setFilters(remainingFilters);
     }
+    // #endregion filter functions
 
     // render
     return (
-        <div className="App">
+        <div className='App'>
             <h1>今天吃啥？</h1>
 
-            <ul className="query-section">
+            <ul className='query-section'>
                 <li>
                     <PeopleSelection
                         people={people} 
@@ -109,12 +115,13 @@ function App() {
                 </li>
             </ul>
 
-            <button className="generate-button" onClick={generateMenu}>生成</button>
+            <button className='generate-button' onClick={generateMenu}>生成</button>
 
-            <div className="menu-section">
+            <div className='menu-section'>
+                <Menu menus={menus} />
             </div>
 
-            <div className="shopping-list-section">
+            <div className='shopping-list-section'>
                 
             </div>
         </div>

@@ -1,5 +1,8 @@
-import { union } from "underscore";
-import { homemade } from "./recipes/home";
+import { isArray, map, union } from 'underscore';
+import consts from './consts';
+import { breakfast } from './recipes/breakfast';
+import { homemade } from './recipes/home';
+import { getRandomElementFromArray } from './utils';
 
 function getAllRecipes() {
     return union(homemade);
@@ -10,10 +13,25 @@ function getRecipes(number, category, filters) {
 }
 
 function getMeal(peopleSize, mealType, filters) {
-    return [];
+    if (mealType === consts.mealType.breakfast) {
+        return {
+            mealType: mealType,
+            dishes: [getRandomElementFromArray(breakfast)],
+        };
+    }
+
+    return {};
 }
 
 function getMeals(peopleSize, meals, filters) {
+    if (meals && isArray(meals) && meals.length > 0 ) {
+        const menus = map(meals, (meal) => {
+            return getMeal(peopleSize, meal.type, filters);
+        });
+
+        return menus;
+    }
+
     return [];
 }
 
