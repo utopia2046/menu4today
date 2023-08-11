@@ -1,40 +1,5 @@
 import { useState } from 'react';
-import { union } from 'underscore';
-
-function Details(props) {
-    const ingredients = union(props.dish.ingrds0, props.dish.ingrds1);
-    const ingrdsEls = ingredients.map(ingrd => 
-        <li>
-            <span>{ingrd.name + (ingrd.optional ? ' (可选)': '')}</span>
-            <span>{ingrd.amount}</span>
-        </li>
-    );
-    const preStepsEls = props.dish.prepSteps.map(step =>
-        <li>{step}</li>
-    );
-    const cookStepEls = props.dish.cookSteps.map(step =>
-        <li>{step}</li>
-    );
-
-    return (
-        <div className='dish-details'>
-            <div>食材</div>
-            <ul>
-                {ingrdsEls}
-            </ul>
-
-            <div>预处理 (约 {props.dish.prepDurInMin} 分钟)</div>
-            <ul>
-                {preStepsEls}
-            </ul>
-
-            <div>操作步骤 (约 {props.dish.cookDurInMin} 分钟)</div>
-            <ul>
-                {cookStepEls}
-            </ul>
-        </div>
-    );
-}
+import Details from './detail';
 
 function Dish(props) {
     const [showDetails, setShowDetails] = useState(false);

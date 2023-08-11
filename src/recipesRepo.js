@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import { isArray, map, union } from 'underscore';
 import consts from './consts';
 import { breakfast } from './recipes/breakfast';
@@ -15,6 +16,7 @@ function getRecipes(number, category, filters) {
 function getMeal(peopleSize, mealType, filters) {
     if (mealType === consts.mealType.breakfast) {
         return {
+            key: 'menu-' + nanoid(),
             mealType: mealType,
             dishes: [getRandomElementFromArray(breakfast)],
         };

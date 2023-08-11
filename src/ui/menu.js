@@ -3,7 +3,7 @@ import Dish from './dish';
 
 function MealMenu(props) {
     const dishElements = props.mealMenu.dishes.map(dish => 
-        <Dish dish={dish} />
+        <Dish key={dish.id} dish={dish} />
     );
 
     return (
@@ -16,7 +16,7 @@ function MealMenu(props) {
 
 function Menu(props) {
     const mealMenuElements = props.menus.map(mealMenu => 
-        <MealMenu mealMenu={mealMenu} />
+        <MealMenu key={mealMenu.key} mealMenu={mealMenu} />
     );
 
     return (
