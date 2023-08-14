@@ -109,3 +109,46 @@
 .generate-button:hover {
   background-color: #027373;
 }
+
+.menu-section {
+  padding: 10px 40px;
+}
+
+.menu-title {
+  color: #499D91;
+  font-weight: bold;
+  padding: 10px 6px;
+  border-bottom: 1px solid #499D91;
+}
+
+.dish-title {
+  padding: 6px 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.dish-name {
+  text-align: left;
+}
+
+.link-button {
+  color: blue;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.dish-details {
+  background-color: white;
+  text-align: left;
+  font-size: 11px;
+  padding: 10px;
+}
+
+.dish-detail-label {
+  color: #499D91;
+  font-weight: bold;
+}

@@ -8,15 +8,15 @@ function Steps(props) {
         };
     });
     const stepsElements = stepsList.map(step =>
-        <li key={step.index}>{step.text}</li>
+        <li key={step.index} className='dish-step'>{step.text}</li>
     );
 
     return (
         <div>
-            <div>{props.title}</div>
-            <ul>
+            <div className='dish-detail-label'>{props.title}</div>
+            <ol>
                 {stepsElements}
-            </ul>
+            </ol>
         </div>
     );
 }
@@ -24,7 +24,7 @@ function Steps(props) {
 function Details(props) {
     const ingredients = union(props.dish.ingrds0, props.dish.ingrds1);
     const ingrdsEls = ingredients.map((ingrd, index) => 
-        <li key={index}>
+        <li key={index} className='ingrd-item'>
             <span>{ingrd.name + (ingrd.optional ? ' (可选)': '')}</span>
             <span>{ingrd.amount}</span>
         </li>
@@ -34,7 +34,7 @@ function Details(props) {
 
     return (
         <div className='dish-details'>
-            <div>食材</div>
+            <div className='dish-detail-label'>食材</div>
             <ul>
                 {ingrdsEls}
             </ul>

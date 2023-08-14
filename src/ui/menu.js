@@ -8,7 +8,7 @@ function MealMenu(props) {
 
     return (
         <div>
-            <div>{consts.mealTypeDisplay[props.mealMenu.mealType]}</div>
+            <div className='menu-title'>{consts.mealTypeDisplay[props.mealMenu.mealType]}</div>
             <div>{dishElements}</div>
         </div>
     );
