@@ -31,7 +31,53 @@ export const homemade = [
         'comments': '可以视个人口味或心情加酱油或糖',
         'utensil': '炒锅',
         'category': '热炒',
-        'tags': ['快手菜', '血糖友好', '咀嚼省力', '微波炉友好'],
+        'tags': ['快手菜', '血糖友好', '省牙', '适合带饭'],
+        'warning': [],
+    },
+    {
+        'id': 'home002',
+        'name': '糖拌西红柿',
+        'ingrds0': [
+            {
+                'name': '西红柿',
+                'amount': '3个'
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '西红柿划破外皮，在开水中烫一下，捞出后撕掉外皮，去蒂切成块',
+            '撒糖',
+        ],
+        'comments': '冷藏一下更好吃',
+        'utensil': '煮锅',
+        'category': '凉菜',
+        'tags': ['快手菜', '省牙'],
+        'warning': [],
+    },
+    {
+        'id': 'home002',
+        'name': '糖拌西红柿',
+        'ingrds0': [
+            {
+                'name': '西红柿',
+                'amount': '3个'
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '西红柿划破外皮，在开水中烫一下，捞出后撕掉外皮，去蒂切成块',
+            '撒糖',
+        ],
+        'comments': '冷藏一下更好吃',
+        'utensil': '煮锅',
+        'category': '凉菜',
+        'tags': ['快手菜', '省牙'],
         'warning': [],
     },
 ];
