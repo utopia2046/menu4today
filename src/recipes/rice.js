@@ -104,6 +104,7 @@ export const rice = [
     {
         'id': 'cbh005',
         'name': '鸡蛋盖饭 神乐饭',
+        'disabled': true,
         'ingrds0': [
             {
                 'name': '大米',
@@ -132,6 +133,7 @@ export const rice = [
     {
         'id': 'cbh006',
         'name': '猫饭',
+        'disabled': true,
         'ingrds0': [
             {
                 'name': '大米',

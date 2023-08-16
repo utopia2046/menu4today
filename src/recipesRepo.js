@@ -3,9 +3,10 @@ import { isArray, map, union } from 'underscore';
 import consts from './consts';
 import { breakfast } from './recipes/breakfast';
 import { homemade } from './recipes/home';
-import { getRandomElementFromArray } from './utils';
+import { rice } from './recipes/rice';
+import { getRandomElementFromArray, getRandomElementsFromArray } from './utils';
 
-function getAllRecipes() {
+function getAllDishes() {
     return union(homemade);
 }
 
@@ -13,13 +14,37 @@ function getRecipes(number, category, filters) {
     return [];
 }
 
+function getDishNumber(peopleSize) {
+    switch (peopleSize) {
+        case consts.peopleSize.single:
+            return 1;
+        case consts.peopleSize.small:
+            return 2;
+        case consts.peopleSize.medium:
+            return 4;
+        case consts.peopleSize.large:
+            return 6;
+        default:
+            return 0;
+    }
+}
+
+function getMealMenu(mealType, dishes) {
+    return {
+        key: 'menu-' + nanoid(),
+        mealType: mealType,
+        dishes: dishes,
+    };
+}
+
 function getMeal(peopleSize, mealType, filters) {
     if (mealType === consts.mealType.breakfast) {
-        return {
-            key: 'menu-' + nanoid(),
-            mealType: mealType,
-            dishes: [getRandomElementFromArray(breakfast)],
-        };
+        return getMealMenu(mealType, [ getRandomElementFromArray(breakfast) ]);
+    } else if (mealType === consts.mealType.lunch) {
+        const dishNumber = getDishNumber(peopleSize);
+        const dishes = [ getRandomElementFromArray(rice) ];
+
+        return getMealMenu(mealType, dishes.concat(getRandomElementsFromArray(getAllDishes(), dishNumber)));
     }
 
     return {};
@@ -38,7 +63,7 @@ function getMeals(peopleSize, meals, filters) {
 }
 
 const RecipesRepo = {
-    getAllRecipes,
+    getAllDishes,
     getRecipes,
     getMeal,
     getMeals
