@@ -90,7 +90,7 @@ export const breakfast = [
             '加牛奶搅拌均匀，喜欢甜的可以加糖',
         ],
         'comments': '',
-        'utensil': '小煮锅',
+        'utensil': '煮锅',
         'category': '粥',
         'tags': [''],
         'warning': [],

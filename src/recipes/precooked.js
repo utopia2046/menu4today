@@ -295,4 +295,11 @@ export const preCooked = [
         'tags': ['高热量'],
         'warning': [],
     },
+    /*
+    红烧肉
+    清炖羊肉
+    红烩牛肉
+    卤牛肉
+    清炖鸡
+    */
 ];
