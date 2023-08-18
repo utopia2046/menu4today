@@ -461,6 +461,7 @@ export const breakfast = [
     },
     {
         'id': 'brkf015',
+        'disabled': true,
         'name': '俱乐部三明治',
         'ingrds0': [
             {
@@ -512,6 +513,7 @@ export const breakfast = [
     },
     {
         'id': 'brkf015',
+        'disabled': true,
         'name': '俱乐部三明治',
         'ingrds0': [
             {
@@ -554,3 +556,18 @@ export const breakfast = [
         'warning': [],
     },
 ];
+/*
+中式汉堡，卷饼
+大饼夹鸡蛋
+大饼夹牛肉
+大饼夹咸菜
+肉夹馍
+馒头夹香菇肉酱
+馒头夹腐乳
+馒头夹牛肉辣酱
+烙饼卷鸡蛋
+烙饼卷鸡丝
+烙饼卷土豆丝
+烙饼卷黑椒牛柳
+烙饼卷京酱肉丝
+*/

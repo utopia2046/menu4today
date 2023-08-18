@@ -497,6 +497,8 @@ export const homemade = [
     /*
     土豆
     辣椒
+    黄瓜
+    西葫芦
     蒜苔
     韭苔
     白菜
@@ -526,6 +528,7 @@ export const homemade = [
     蟹味菇
     杏鲍菇
     莴笋
+    油麦菜
     芦笋
     藕
     茭白
@@ -533,6 +536,8 @@ export const homemade = [
     胡萝卜
     白萝卜
     豆腐
+    豆腐皮
+    豆腐干
     绿豆芽
     黄豆芽
     毛豆
