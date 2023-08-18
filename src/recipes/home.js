@@ -5,11 +5,11 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '西红柿',
-                'amount': '2个'
+                'amount': '2个',
             },
             {
                 'name': '鸡蛋',
-                'amount': '3个'
+                'amount': '3个',
             },
         ],
         'ingrds1': [
@@ -40,7 +40,7 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '西红柿',
-                'amount': '3个'
+                'amount': '3个',
             },
         ],
         'ingrds1': [],
@@ -78,11 +78,11 @@ export const homemade = [
         'ingrds1': [
             {
                 'name': '葱花',
-                'amount': '少量'
+                'amount': '少量',
             },
             {
                 'name': '番茄酱',
-                'amount': '1大勺'
+                'amount': '1大勺',
             },
         ],
         'prepDurInMin': 5,
@@ -107,25 +107,25 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '西红柿',
-                'amount': '2个'
+                'amount': '2个',
             },
             {
                 'name': '圆茄子',
-                'amount': '1个'
+                'amount': '1个',
             },
         ],
         'ingrds1': [
             {
                 'name': '葱花蒜粒',
-                'amount': '少量'
+                'amount': '少量',
             },
             {
                 'name': '甜面酱',
-                'amount': '1大勺'
+                'amount': '1大勺',
             },
             {
                 'name': '豆瓣酱',
-                'amount': '1大勺'
+                'amount': '1大勺',
             },
         ],
         'prepDurInMin': 30,
@@ -150,27 +150,27 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '圆茄子',
-                'amount': '1个'
+                'amount': '1个',
             },
             {
                 'name': '青红椒',
-                'amount': '2个'
+                'amount': '2个',
             },
         ],
         'ingrds1': [
             {
                 'name': '葱花蒜粒',
-                'amount': '少量'
+                'amount': '少量',
             },
             {
                 'name': '炒肉片',
                 'amount': '少量',
                 'link': 'prck004',
-                'optional': true
+                'optional': true,
             },
             {
                 'name': '豆瓣酱',
-                'amount': '1大勺'
+                'amount': '1大勺',
             },
         ],
         'prepDurInMin': 30,
@@ -195,19 +195,19 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '长茄子',
-                'amount': '3个'
+                'amount': '3个',
             },
         ],
         'ingrds1': [
             {
                 'name': '洋葱辣椒碎',
-                'amount': '少量'
+                'amount': '少量',
             },
             {
                 'name': '肉臊子',
                 'amount': '少量',
                 'link': 'prck003',
-                'optional': true
+                'optional': true,
             },
         ],
         'prepDurInMin': 0,
@@ -230,18 +230,18 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '长茄子',
-                'amount': '3个'
+                'amount': '3个',
             },
         ],
         'ingrds1': [
             {
                 'name': '大蒜',
-                'amount': '3-4 瓣'
+                'amount': '3-4 瓣',
             },
             {
                 'name': '芝麻酱',
                 'amount': '少量',
-                'optional': true
+                'optional': true,
             },
         ],
         'prepDurInMin': 0,
@@ -264,21 +264,21 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '卵圆茄子',
-                'amount': '1个'
+                'amount': '1个',
             },
             {
                 'name': '土豆',
-                'amount': '1个'
+                'amount': '1个',
             },
             {
                 'name': '青椒',
-                'amount': '1个'
+                'amount': '1个',
             },
         ],
         'ingrds1': [
             {
                 'name': '大蒜',
-                'amount': '2-3 瓣'
+                'amount': '2-3 瓣',
             },
             {
                 'name': '豆瓣酱',
@@ -309,15 +309,15 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '圆茄子',
-                'amount': '1个'
+                'amount': '1个',
             },
             {
                 'name': '土豆',
-                'amount': '1个'
+                'amount': '1个',
             },
             {
                 'name': '杏鲍菇',
-                'amount': '1个'
+                'amount': '1个',
             },
         ],
         'ingrds1': [
@@ -360,19 +360,19 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '茄子',
-                'amount': '1个'
+                'amount': '1个',
             },
             {
                 'name': '土豆',
-                'amount': '1个'
+                'amount': '1个',
             },
             {
                 'name': '豆角',
-                'amount': '1把'
+                'amount': '1把',
             },
             {
                 'name': '红烧肉',
-                'amount': '适量'
+                'amount': '适量',
             },
         ],
         'ingrds1': [
@@ -421,7 +421,7 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '豆角',
-                'amount': '1把'
+                'amount': '1把',
             },
         ],
         'ingrds1': [
@@ -458,7 +458,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['适合带饭'],
-        'warning': [],
+        'warning': ['宽油预警'],
     },
     {
         'id': 'home012',
@@ -466,7 +466,7 @@ export const homemade = [
         'ingrds0': [
             {
                 'name': '豇豆',
-                'amount': '1把'
+                'amount': '1把',
             },
         ],
         'ingrds1': [

@@ -206,7 +206,7 @@ export const rice = [
                 'name': '豆角 (四季豆)',
             },
             {
-                'name': '香肠或炖肉',
+                'name': '香肠或卤肉',
                 'optional': true,
             },
         ],

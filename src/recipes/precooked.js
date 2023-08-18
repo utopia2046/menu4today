@@ -5,15 +5,15 @@ export const preCooked = [
         'ingrds0': [
             {
                 'name': '土豆',
-                'amount': '2 个'
+                'amount': '2 个',
             },
             {
                 'name': '猪绞肉',
-                'amount': '500 g'
+                'amount': '500 g',
             },
             {
                 'name': '洋葱',
-                'amount': '1 个'
+                'amount': '1 个',
             },
             {
                 'name': '鸡蛋',
@@ -44,10 +44,10 @@ export const preCooked = [
             '翻面后继续煎 3 分钟左右，到完全熟透就可以铲出锅了',
             '重复直到所有肉馅都煎成肉饼',
             '刚出锅的土豆饼可以配番茄酱直接吃',
-            '一次多做一些，放冰箱，早饭夹馒头，夹面包，配米饭都可以吃'
+            '一次多做一些，放冰箱，早饭夹馒头，夹面包，配米饭都可以吃',
         ],
         'comments': '商店里卖的可乐饼是裹面包糠炸出来的，家里做改成煎',
-        'utensil': '',
+        'utensil': '煎锅',
         'category': '半成品',
         'tags': ['高热量'],
         'warning': [],
@@ -58,7 +58,7 @@ export const preCooked = [
         'ingrds0': [
             {
                 'name': '猪绞肉',
-                'amount': '1000 g'
+                'amount': '1000 g',
             },
             {
                 'name': '鸡蛋',
@@ -133,7 +133,7 @@ export const preCooked = [
         'ingrds0': [
             {
                 'name': '猪肉',
-                'amount': '500 g'
+                'amount': '500 g',
             },
         ],
         'ingrds1': [
