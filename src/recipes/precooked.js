@@ -50,7 +50,7 @@ export const preCooked = [
         'utensil': '煎锅',
         'category': '半成品',
         'tags': ['高热量'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'prck002',
@@ -91,7 +91,7 @@ export const preCooked = [
         'utensil': '炒锅',
         'category': '半成品',
         'tags': ['高热量'],
-        'warning': ['油炸劝退'],
+        'warnings': ['油炸劝退'],
     },
     {
         'id': 'prck003',
@@ -125,7 +125,7 @@ export const preCooked = [
         'utensil': '炒锅',
         'category': '半成品',
         'tags': ['高热量', '高盐'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'prck004',
@@ -157,7 +157,7 @@ export const preCooked = [
         'utensil': '炒锅',
         'category': '半成品',
         'tags': ['高热量', '高盐'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'prck005',
@@ -206,7 +206,7 @@ export const preCooked = [
         'utensil': '炒锅',
         'category': '半成品',
         'tags': ['高热量', '高盐'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'prck006',
@@ -258,7 +258,7 @@ export const preCooked = [
         'utensil': '炒锅',
         'category': '半成品',
         'tags': ['高热量', '高盐'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'prck007',
@@ -293,7 +293,7 @@ export const preCooked = [
         'utensil': '炒锅',
         'category': '半成品',
         'tags': ['高热量'],
-        'warning': [],
+        'warnings': [],
     },
     /*
     卤肉
@@ -334,5 +334,9 @@ export const preCooked = [
     棒棒鸡
     鸡丝凉面
     海南鸡饭
+
+    高汤
+    素高汤
+    出汁
     */
 ];

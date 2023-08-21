@@ -21,7 +21,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh002',
@@ -47,7 +47,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': ['血糖友好'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh003',
@@ -73,7 +73,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': ['血糖友好'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh004',
@@ -99,7 +99,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': ['血糖友好'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh005',
@@ -128,7 +128,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': [],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh006',
@@ -157,7 +157,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': [],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh007',
@@ -185,7 +185,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': [],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh008',
@@ -225,7 +225,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': ['血糖友好', '适合带饭'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'cbh009',
@@ -265,7 +265,7 @@ export const rice = [
         'utensil': '电饭锅',
         'category': '主食',
         'tags': [],
-        'warning': [],
+        'warnings': [],
     },
 ];
 /*

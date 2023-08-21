@@ -152,3 +152,16 @@
   color: #499D91;
   font-weight: bold;
 }
+
+.dish-detail-text {
+  padding: 12px 20px;
+}
+
+.dish-tag {
+  padding-right: 10px;
+  color: #499D91;
+}
+
+.tag-warning {
+  color: #fa7113;
+}

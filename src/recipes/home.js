@@ -32,7 +32,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['快手菜', '血糖友好', '省牙', '适合带饭'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'home002',
@@ -55,7 +55,7 @@ export const homemade = [
         'utensil': '煮锅',
         'category': '凉菜',
         'tags': ['快手菜', '省牙', '素菜', '夏天'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'home003',
@@ -99,7 +99,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['快手菜', '省牙', '适合带饭'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'home004',
@@ -142,7 +142,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['快手菜', '素菜', '省牙', '适合带饭'],
-        'warning': ['宽油预警'],
+        'warnings': ['宽油预警'],
     },
     {
         'id': 'home005',
@@ -187,7 +187,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['快手菜', '适合带饭'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'home006',
@@ -222,7 +222,7 @@ export const homemade = [
         'utensil': '烤箱',
         'category': '烧烤',
         'tags': [],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'home007',
@@ -256,7 +256,7 @@ export const homemade = [
         'utensil': '蒸锅',
         'category': '凉菜',
         'tags': ['素菜', '夏天'],
-        'warning': ['口气预警'],
+        'warnings': ['口气预警'],
     },
     {
         'id': 'home008',
@@ -301,7 +301,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['素菜'],
-        'warning': ['口气预警', '宽油预警'],
+        'warnings': ['口气预警', '宽油预警'],
     },
     {
         'id': 'home009',
@@ -352,7 +352,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['适合带饭'],
-        'warning': ['宽油预警'],
+        'warnings': ['宽油预警'],
     },
     {
         'id': 'home010',
@@ -413,7 +413,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['适合带饭'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'home011',
@@ -458,7 +458,7 @@ export const homemade = [
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['适合带饭'],
-        'warning': ['宽油预警'],
+        'warnings': ['宽油预警'],
     },
     {
         'id': 'home012',
@@ -492,7 +492,7 @@ export const homemade = [
         'utensil': '煮锅',
         'category': '凉菜',
         'tags': ['素菜', '夏天'],
-        'warning': ['口气预警'],
+        'warnings': ['口气预警'],
     },
     /*
     土豆

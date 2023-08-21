@@ -1,13 +1,16 @@
 import { nanoid } from 'nanoid';
-import { isArray, map, union } from 'underscore';
+import _ from 'underscore';
 import consts from './consts';
 import { breakfast } from './recipes/breakfast';
 import { homemade } from './recipes/home';
 import { rice } from './recipes/rice';
 import { getRandomElementFromArray, getRandomElementsFromArray } from './utils';
 
-function getAllDishes() {
-    return union(homemade);
+function getDishesFromList(sourceList) {
+    return _.chain(sourceList)
+    .union()
+    .filter(dish => { return !dish.disabled; })
+    .value();
 }
 
 function getRecipes(number, category, filters) {
@@ -42,17 +45,21 @@ function getMeal(peopleSize, mealType, filters) {
         return getMealMenu(mealType, [ getRandomElementFromArray(breakfast) ]);
     } else if (mealType === consts.mealType.lunch) {
         const dishNumber = getDishNumber(peopleSize);
-        const dishes = [ getRandomElementFromArray(rice) ];
+        const fanCandidates = getDishesFromList(rice);
+        const fan = getRandomElementFromArray(fanCandidates);
+        const caiCandidates = getDishesFromList(homemade);
+        const cai = getRandomElementsFromArray(caiCandidates, dishNumber);
+        const dishes = _.union([fan], cai);
 
-        return getMealMenu(mealType, dishes.concat(getRandomElementsFromArray(getAllDishes(), dishNumber)));
+        return getMealMenu(mealType, dishes);
     }
 
     return {};
 }
 
 function getMeals(peopleSize, meals, filters) {
-    if (meals && isArray(meals) && meals.length > 0 ) {
-        const menus = map(meals, (meal) => {
+    if (meals && _.isArray(meals) && meals.length > 0 ) {
+        const menus = _.map(meals, (meal) => {
             return getMeal(peopleSize, meal.type, filters);
         });
 
@@ -63,7 +70,7 @@ function getMeals(peopleSize, meals, filters) {
 }
 
 const RecipesRepo = {
-    getAllDishes,
+    getDishesFromList,
     getRecipes,
     getMeal,
     getMeals

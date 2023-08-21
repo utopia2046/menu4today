@@ -5,15 +5,15 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '甜玉米粒(熟)',
-                'amount': '1把'
+                'amount': '1把',
             },
             {
                 'name': '香蕉',
-                'amount': '1根'
+                'amount': '1根',
             },
             {
                 'name': '牛奶',
-                'amount': '1盒'
+                'amount': '1盒',
             },
         ],
         'ingrds1': [],
@@ -28,7 +28,7 @@ export const breakfast = [
         'utensil': '搅拌机',
         'category': '点心',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf002',
@@ -36,11 +36,11 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '自制酸奶',
-                'amount': '1碗'
+                'amount': '1碗',
             },
             {
                 'name': '时令水果',
-                'amount': '适量'
+                'amount': '适量',
             },
         ],
         'ingrds1': [
@@ -61,7 +61,7 @@ export const breakfast = [
         'utensil': '搅拌机',
         'category': '点心',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf003',
@@ -69,15 +69,15 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '即食麦片',
-                'amount': '1杯'
+                'amount': '1杯',
             },
             {
                 'name': '牛奶',
-                'amount': '200ml'
+                'amount': '200ml',
             },
             {
                 'name': '水',
-                'amount': '200ml'
+                'amount': '200ml',
             },
         ],
         'ingrds1': [],
@@ -93,7 +93,7 @@ export const breakfast = [
         'utensil': '煮锅',
         'category': '粥',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf004',
@@ -101,25 +101,25 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '即食麦片',
-                'amount': '1杯'
+                'amount': '1杯',
             },
             {
                 'name': '自制酸奶',
-                'amount': '适量'
+                'amount': '适量',
             },
         ],
         'ingrds1': [
             {
                 'name': '水果或坚果',
                 'amount': '适量',
-                'optional': true
+                'optional': true,
             },
         ],
         'prepDurInMin': 3,
         'prepSteps': [
             '杯子里倒即食麦片',
             '加酸奶到没过麦片',
-            '放进冰箱冷藏一夜'
+            '放进冰箱冷藏一夜',
         ],
         'cookDurInMin': 0,
         'cookSteps': [],
@@ -127,7 +127,7 @@ export const breakfast = [
         'utensil': '',
         'category': '点心',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf005',
@@ -135,11 +135,11 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '切片面包',
-                'amount': '2 片'
+                'amount': '2 片',
             },
             {
                 'name': '奶酪片',
-                'amount': '1 片'
+                'amount': '1 片',
             },
             {
                 'name': '花生酱',
@@ -159,7 +159,7 @@ export const breakfast = [
         'utensil': '烤箱',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf006',
@@ -167,11 +167,11 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '切片面包',
-                'amount': '2 片'
+                'amount': '2 片',
             },
             {
                 'name': '鸡蛋',
-                'amount': '1 个'
+                'amount': '1 个',
             },
         ],
         'ingrds1': [],
@@ -187,7 +187,7 @@ export const breakfast = [
         'utensil': '烤箱, 煎锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf007',
@@ -195,11 +195,11 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '切片面包',
-                'amount': '1 片'
+                'amount': '1 片',
             },
             {
                 'name': '鸡蛋',
-                'amount': '1 个'
+                'amount': '1 个',
             },
         ],
         'ingrds1': [],
@@ -216,7 +216,7 @@ export const breakfast = [
         'utensil': '煎锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf008',
@@ -224,11 +224,11 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '馒头',
-                'amount': '1 个'
+                'amount': '1 个',
             },
             {
                 'name': '鸡蛋',
-                'amount': '1 个'
+                'amount': '1 个',
             },
         ],
         'ingrds1': [],
@@ -245,7 +245,7 @@ export const breakfast = [
         'utensil': '煎锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf009',
@@ -253,11 +253,11 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '切片面包',
-                'amount': '1 片'
+                'amount': '1 片',
             },
             {
                 'name': '鸡蛋',
-                'amount': '1 个'
+                'amount': '1 个',
             },
         ],
         'ingrds1': [],
@@ -273,7 +273,7 @@ export const breakfast = [
         'utensil': '煎锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf010',
@@ -281,15 +281,15 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '切片面包',
-                'amount': '2 片'
+                'amount': '2 片',
             },
             {
                 'name': '鸡蛋',
-                'amount': '1 个'
+                'amount': '1 个',
             },
             {
                 'name': '黄瓜',
-                'amount': '几片'
+                'amount': '几片',
             },
         ],
         'ingrds1': [],
@@ -306,7 +306,7 @@ export const breakfast = [
         'utensil': '烤箱, 炒锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf011',
@@ -314,22 +314,22 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '全麦面包',
-                'amount': '2 片'
+                'amount': '2 片',
             },
             {
                 'name': '鸡蛋',
-                'amount': '1 个'
+                'amount': '1 个',
             },
             {
                 'name': '黄芥末酱',
-                'amount': '1 大勺'
+                'amount': '1 大勺',
             },
         ],
         'ingrds1': [
             {
                 'name': '酸黄瓜',
                 'amount': '几片',
-                'optional': true
+                'optional': true,
             },
         ],
         'prepDurInMin': 10,
@@ -346,7 +346,7 @@ export const breakfast = [
         'utensil': '烤箱, 煮锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf012',
@@ -354,34 +354,34 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '切片面包',
-                'amount': '2 片'
+                'amount': '2 片',
             },
             {
                 'name': '熟鸡蛋',
-                'amount': '1 个'
+                'amount': '1 个',
             },
             {
                 'name': '金枪鱼罐头',
-                'amount': '1 个'
+                'amount': '1 个',
             },
         ],
         'ingrds1': [
             {
                 'name': '黄芥末酱',
-                'amount': '1 勺'
+                'amount': '1 勺',
             },
             {
                 'name': '花生酱',
-                'amount': '1 勺'
+                'amount': '1 勺',
             },
             {
                 'name': '奶酪片',
                 'amount': '1 片',
-                'optional': true
+                'optional': true,
             },
             {
                 'name': '酸黄瓜',
-                'amount': '几片'
+                'amount': '几片',
             },
         ],
         'prepDurInMin': 12,
@@ -398,7 +398,7 @@ export const breakfast = [
         'utensil': '烤箱, 煮锅',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf013',
@@ -406,15 +406,15 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '切片面包',
-                'amount': '2 片'
+                'amount': '2 片',
             },
             {
                 'name': '火腿',
-                'amount': '1 片'
+                'amount': '1 片',
             },
             {
                 'name': '奶酪',
-                'amount': '1 片'
+                'amount': '1 片',
             },
         ],
         'ingrds1': [],
@@ -429,7 +429,7 @@ export const breakfast = [
         'utensil': '烤箱',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf014',
@@ -437,7 +437,7 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '馒头片',
-                'amount': '2 片'
+                'amount': '2 片',
             },
             {
                 'name': '可乐饼',
@@ -457,7 +457,7 @@ export const breakfast = [
         'utensil': '烤箱',
         'category': '主食',
         'tags': [''],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf015',
@@ -466,7 +466,7 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '面包片',
-                'amount': '3 片'
+                'amount': '3 片',
             },
             {
                 'name': '鸡蛋',
@@ -509,7 +509,7 @@ export const breakfast = [
         'utensil': '烤箱',
         'category': '主食',
         'tags': ['午餐', '野餐'],
-        'warning': [],
+        'warnings': [],
     },
     {
         'id': 'brkf015',
@@ -518,7 +518,7 @@ export const breakfast = [
         'ingrds0': [
             {
                 'name': '长条面包',
-                'amount': '1 根'
+                'amount': '1 根',
             },
             {
                 'name': '烟熏牛肉片',
@@ -553,7 +553,7 @@ export const breakfast = [
         'utensil': '',
         'category': '主食',
         'tags': ['午餐', '野餐'],
-        'warning': [],
+        'warnings': [],
     },
 ];
 /*
