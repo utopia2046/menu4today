@@ -57,6 +57,32 @@ function getMeal(peopleSize, mealType, filters) {
     return {};
 }
 
+function getIngredients(dishes) {
+    let ingredList = [];
+
+    dishes.forEach(dish => {
+        let ingrds = _.union(dish.ingrds0, dish.ingrds1);
+        const dishIngrds = _.map(ingrds, (ingrd) => {
+            return {...ingrd, 'dishName': dish.name};
+        }, dish);
+        ingredList = _.union(ingredList, dishIngrds);
+    });
+
+    return ingredList;
+}
+
+function getMenusIngredients(menus, sortByName = true) {
+    const ingreds = _.reduce(menus, (memo, menu) => {
+        return _.union(memo, getIngredients(menu.dishes));
+    }, []);
+
+    if (sortByName) {
+        return _.sortBy(ingreds, 'name');
+    }
+
+    return ingreds;
+}
+
 function getMeals(peopleSize, meals, filters) {
     if (meals && _.isArray(meals) && meals.length > 0 ) {
         const menus = _.map(meals, (meal) => {
@@ -73,7 +99,8 @@ const RecipesRepo = {
     getDishesFromList,
     getRecipes,
     getMeal,
-    getMeals
+    getMeals,
+    getMenusIngredients,
 };
 
 export default RecipesRepo;

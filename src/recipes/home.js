@@ -333,7 +333,7 @@ export const homemade = [
             },
             {
                 'name': '豆瓣酱',
-                'amount': '一大勺',
+                'amount': '1大勺',
             },
         ],
         'prepDurInMin': 10,
@@ -382,7 +382,7 @@ export const homemade = [
             },
             {
                 'name': '胡萝卜',
-                'amount': '1 根',
+                'amount': '1根',
                 'optional': true,
             },
             {
@@ -392,7 +392,7 @@ export const homemade = [
             },
             {
                 'name': '豆瓣酱',
-                'amount': '一大勺',
+                'amount': '1大勺',
             },
         ],
         'prepDurInMin': 30,
@@ -439,7 +439,7 @@ export const homemade = [
             },
             {
                 'name': '豆豉',
-                'amount': '一大勺',
+                'amount': '1大勺',
             },
         ],
         'prepDurInMin': 5,

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import RecipesRepo from '../recipesRepo';
 import '../res/App.css';
 import FilterEdit from './filterEdit';
+import IngredientsList from './ingredientsList';
 import MealSelection from './mealSelect';
 import Menu from './menu';
 import PeopleSelection from './peopleSelect';
@@ -12,11 +13,16 @@ function App() {
     const [meals, setMeals] = useState([newMeal()]);
     const [filters, setFilters] = useState([]);
     const [menus, setMenus] = useState([]);
+    const [ingreds, setIngreds] = useState([]);
 
     function generateMenu() {
         const newMenus = RecipesRepo.getMeals(people, meals, filters);
 
         setMenus(newMenus);
+
+        const newIngreds = RecipesRepo.getMenusIngredients(newMenus);
+
+        setIngreds(newIngreds);
     }
 
     function getPeople(option) {
@@ -99,7 +105,7 @@ function App() {
                 </li>
                 <li>
                     <MealSelection 
-                        meals={meals} 
+                        meals={meals}
                         onAddMeal={addMeal} 
                         onRemoveMeal={removeMeal} 
                         onUpdateMeal={updateMeal}
@@ -121,8 +127,8 @@ function App() {
                 <Menu menus={menus} />
             </div>
 
-            <div className='shopping-list-section'>
-                
+            <div className='ingredients-list-section'>
+                <IngredientsList ingreds={ingreds} />
             </div>
         </div>
     );
