@@ -460,8 +460,8 @@ export const breakfast = [
         'warnings': [],
     },
     {
-        'id': 'brkf015',
         'disabled': true,
+        'id': 'brkf015',
         'name': '俱乐部三明治',
         'ingrds0': [
             {
@@ -512,8 +512,8 @@ export const breakfast = [
         'warnings': [],
     },
     {
-        'id': 'brkf015',
         'disabled': true,
+        'id': 'brkf015',
         'name': '俱乐部三明治',
         'ingrds0': [
             {

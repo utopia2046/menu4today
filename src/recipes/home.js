@@ -305,7 +305,7 @@ export const homemade = [
     },
     {
         'id': 'home009',
-        'name': 'Chetumo 茄土蘑',
+        'name': 'Chetumo(茄土蘑)',
         'ingrds0': [
             {
                 'name': '圆茄子',

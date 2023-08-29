@@ -1,7 +1,7 @@
 export const preCooked = [
     {
         'id': 'prck001',
-        'name': '可乐饼 (土豆肉饼)',
+        'name': '可乐饼(土豆肉饼)',
         'ingrds0': [
             {
                 'name': '土豆',
@@ -210,7 +210,7 @@ export const preCooked = [
     },
     {
         'id': 'prck006',
-        'name': '牛肉蘑菇辣酱 (傻狗牛肉酱)',
+        'name': '牛肉蘑菇辣酱(傻狗牛肉酱)',
         'ingrds0': [
             {
                 'name': '牛肉碎',

@@ -3,12 +3,12 @@ import _ from 'underscore';
 import consts from './consts';
 import { breakfast } from './recipes/breakfast';
 import { homemade } from './recipes/home';
+import { porridge } from './recipes/porridge';
 import { rice } from './recipes/rice';
 import { getRandomElementFromArray, getRandomElementsFromArray } from './utils';
 
 function getDishesFromList(sourceList) {
     return _.chain(sourceList)
-    .union()
     .filter(dish => { return !dish.disabled; })
     .value();
 }
@@ -17,16 +17,16 @@ function getRecipes(number, category, filters) {
     return [];
 }
 
-function getDishNumber(peopleSize) {
+function getDishNumber(peopleSize, mealType = consts.mealType.lunch) {
     switch (peopleSize) {
         case consts.peopleSize.single:
             return 1;
         case consts.peopleSize.small:
-            return 2;
+            return mealType === consts.mealType.lunch ? 2 : 1;
         case consts.peopleSize.medium:
-            return 4;
+            return mealType === consts.mealType.lunch ? 4 : 2;
         case consts.peopleSize.large:
-            return 6;
+            return mealType === consts.mealType.lunch ? 6 : 3;
         default:
             return 0;
     }
@@ -43,18 +43,24 @@ function getMealMenu(mealType, dishes) {
 function getMeal(peopleSize, mealType, filters) {
     if (mealType === consts.mealType.breakfast) {
         return getMealMenu(mealType, [ getRandomElementFromArray(breakfast) ]);
-    } else if (mealType === consts.mealType.lunch) {
-        const dishNumber = getDishNumber(peopleSize);
-        const fanCandidates = getDishesFromList(rice);
-        const fan = getRandomElementFromArray(fanCandidates);
+    } else {
+        const dishNumber = getDishNumber(peopleSize, mealType);
+        let mainCandidates;
+
+        if (mealType === consts.mealType.lunch) {
+            mainCandidates = getDishesFromList(rice);
+
+        } else if (mealType === consts.mealType.dinner) {
+            mainCandidates = getDishesFromList(porridge);
+        }
+
+        const main = getRandomElementFromArray(mainCandidates);
         const caiCandidates = getDishesFromList(homemade);
         const cai = getRandomElementsFromArray(caiCandidates, dishNumber);
-        const dishes = _.union([fan], cai);
+        const dishes = _.union([main], cai);
 
         return getMealMenu(mealType, dishes);
     }
-
-    return {};
 }
 
 function getIngredients(dishes) {

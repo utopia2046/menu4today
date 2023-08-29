@@ -11,7 +11,7 @@ export function getRandomElementFromArray(arr) {
 }
 
 export function getRandomElementsFromArray(arr, number) {
-    if (arr && isArray(arr) && arr.length > 0 && number > 1 && number <= arr.length) {
+    if (arr && isArray(arr) && arr.length > 0 && number > 0 && number <= arr.length) {
         const randomArr = [];
         const arrCopy = [...arr];
         let index, element;

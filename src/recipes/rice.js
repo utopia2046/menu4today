@@ -51,10 +51,10 @@ export const rice = [
     },
     {
         'id': 'cbh003',
-        'name': '黑米饭 紫米饭',
+        'name': '黑米饭(紫米饭)',
         'ingrds0': [
             {
-                'name': '黑米（紫米）',
+                'name': '黑米(紫米)',
             },
             {
                 'name': '大米',
@@ -102,9 +102,9 @@ export const rice = [
         'warnings': [],
     },
     {
-        'id': 'cbh005',
-        'name': '鸡蛋盖饭 神乐饭',
         'disabled': true,
+        'id': 'cbh005',
+        'name': '鸡蛋盖饭(神乐饭)',
         'ingrds0': [
             {
                 'name': '大米',
@@ -131,9 +131,9 @@ export const rice = [
         'warnings': [],
     },
     {
+        'disabled': true,
         'id': 'cbh006',
         'name': '猫饭',
-        'disabled': true,
         'ingrds0': [
             {
                 'name': '大米',
@@ -169,7 +169,7 @@ export const rice = [
         ],
         'ingrds1': [
             {
-                'name': '地瓜 (红薯)',
+                'name': '地瓜(红薯)',
             },
         ],
         'prepDurInMin': 5,

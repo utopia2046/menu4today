@@ -98,7 +98,7 @@ export const porridge = [
     },
     {
         'id': 'prg005',
-        'name': '紫米粥 黑米粥',
+        'name': '紫米粥(黑米粥)',
         'ingrds0': [
             {
                 'name': '紫米 (黑米)',
@@ -276,6 +276,7 @@ export const porridge = [
         'warnings': [],
     },
     {
+        'disabled': true,
         'id': 'prg012',
         'name': '灰豆汤',
         'ingrds0': [
@@ -464,7 +465,7 @@ export const porridge = [
     },
     {
         'id': 'prg018',
-        'name': '烩饭 珍珠翡翠白玉汤',
+        'name': '烩饭(珍珠翡翠白玉汤)',
         'ingrds0': [
             {
                 'name': '剩米饭',
