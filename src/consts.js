@@ -17,10 +17,27 @@ const mealTypeDisplay = {
     'dinner': '晚饭',
 };
 
+const filterBy = {
+    'title': 'byTitle',
+    'ingredient': 'byIngredient',
+    'category': 'byCategory',
+    'tag': 'byTag',
+    'utensil': 'byUtensil',
+    'cookDuration': 'byCookDur',
+}
+
+const filterOp = {
+    'contains': 'contains',
+    'notContain': 'notContain',
+    'lessThan': 'lessThan',
+};
+
 const consts = {
     peopleSize,
     mealType,
     mealTypeDisplay,
+    filterBy,
+    filterOp,
 };
 
 export default consts;

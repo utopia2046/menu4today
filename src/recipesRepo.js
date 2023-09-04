@@ -7,14 +7,61 @@ import { porridge } from './recipes/porridge';
 import { rice } from './recipes/rice';
 import { getRandomElementFromArray, getRandomElementsFromArray } from './utils';
 
-function getDishesFromList(sourceList) {
-    return _.chain(sourceList)
-    .filter(dish => { return !dish.disabled; })
-    .value();
+function getDishesList(sourceList, filters = []) {
+    const filteredList = [];
+
+    for (let i = 0; i < sourceList.length; i++) {
+        let dish = sourceList[i];
+        let isFit = !dish.disabled;
+
+        if (filters && (filters.length > 0)) {
+            let testResults = _.map(filters, filter => {return testDishWithFilter(dish, filter)}, this);
+            let result = _.reduce(testResults, (memo, test) => { return memo && test }, true);
+            isFit = isFit && result;
+        }
+        
+        if (isFit) {
+            filteredList.push(dish);
+        }
+    }
+
+    return filteredList;
 }
 
-function getRecipes(number, category, filters) {
-    return [];
+function hasIngredInDish(dish, ingredientName) {
+    const ingreds = _.union(dish.ingrds0, dish.ingrds1);
+
+    for (let i = 0; i < ingreds.length; i++) {
+        if (ingreds[i].name.includes(ingredientName)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function testDishWithFilter(dish, filter) {
+    switch(filter.by) {
+        case consts.filterBy.title:
+            return ((filter.op === consts.filterOp.contains) && dish.name.includes(filter.value))
+                || ((filter.op === consts.filterOp.notContain) && !dish.name.includes(filter.value));
+        case consts.filterBy.ingredient:
+            return ((filter.op === consts.filterOp.contains) && hasIngredInDish(dish, filter.value))
+                || ((filter.op === consts.filterOp.notContain) && !hasIngredInDish(dish, filter.value));
+        case consts.filterBy.category:
+            return ((filter.op === consts.filterOp.contains) && dish.category.includes(filter.value))
+                || ((filter.op === consts.filterOp.notContain) && !dish.category.includes(filter.value));
+        case consts.filterBy.tag:
+            return ((filter.op === consts.filterOp.contains) && _.contains(dish.tags, filter.value))
+                || ((filter.op === consts.filterOp.notContain) && !_.contains(dish.tags, filter.value));
+        case consts.filterBy.utensil:
+            return ((filter.op === consts.filterOp.contains) && dish.utensil.includes(filter.value))
+                || ((filter.op === consts.filterOp.notContain) && !dish.utensil.includes(filter.value));
+        case consts.filterBy.byCookDur:
+            return (dish.cookDurInMin + dish.prepDurInMin) < parseInt(filter.value);
+        default:
+            return false;
+    }
 }
 
 function getDishNumber(peopleSize, mealType = consts.mealType.lunch) {
@@ -48,14 +95,14 @@ function getMeal(peopleSize, mealType, filters) {
         let mainCandidates;
 
         if (mealType === consts.mealType.lunch) {
-            mainCandidates = getDishesFromList(rice);
+            mainCandidates = getDishesList(rice);
 
         } else if (mealType === consts.mealType.dinner) {
-            mainCandidates = getDishesFromList(porridge);
+            mainCandidates = getDishesList(porridge);
         }
 
         const main = getRandomElementFromArray(mainCandidates);
-        const caiCandidates = getDishesFromList(homemade);
+        const caiCandidates = getDishesList(homemade, filters);
         const cai = getRandomElementsFromArray(caiCandidates, dishNumber);
         const dishes = _.union([main], cai);
 
@@ -102,8 +149,7 @@ function getMeals(peopleSize, meals, filters) {
 }
 
 const RecipesRepo = {
-    getDishesFromList,
-    getRecipes,
+    getDishesList,
     getMeal,
     getMeals,
     getMenusIngredients,
