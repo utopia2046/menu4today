@@ -340,5 +340,7 @@ export const preCooked = [
     高汤
     素高汤
     出汁
+
+    红油
     */
 ];
