@@ -21,7 +21,7 @@ export const breakfast = [
         'prepSteps': [],
         'cookDurInMin': 3,
         'cookSteps': [
-            '把甜玉米粒和香蕉放进搅拌机',
+            '把甜玉米粒、香蕉和牛奶放进搅拌机',
             '按奶昔键，打 3 分钟',
         ],
         'comments': '',
@@ -91,7 +91,7 @@ export const breakfast = [
         ],
         'comments': '',
         'utensil': '煮锅',
-        'category': '粥',
+        'category': '主食',
         'tags': [''],
         'warnings': [],
     },
@@ -513,7 +513,7 @@ export const breakfast = [
     },
     {
         'disabled': true,
-        'id': 'brkf015',
+        'id': 'brkf016',
         'name': '俱乐部三明治',
         'ingrds0': [
             {

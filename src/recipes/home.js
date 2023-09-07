@@ -858,7 +858,7 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '适合带饭'],
+        'tags': ['快手菜', '适合带饭', '省牙'],
         'warnings': [''],
     },
     {
@@ -928,7 +928,7 @@ export const homemade = [
         'comments': '不要拿菜刀直接去拍黄瓜，否则菜刀折了商家还要甩锅你使用不当(手动狗头)',
         'utensil': '炒锅',
         'category': '凉菜',
-        'tags': ['快手菜', '夏天'],
+        'tags': ['快手菜', '素菜', '夏天'],
         'warnings': ['口气预警'],
     },
     {
@@ -962,7 +962,7 @@ export const homemade = [
         'comments': '',
         'utensil': '',
         'category': '凉菜',
-        'tags': ['夏天'],
+        'tags': ['夏天', '素菜'],
         'warnings': ['口气预警'],
     },
     {
@@ -997,7 +997,7 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '适合带饭'],
+        'tags': ['快手菜', '适合带饭', '省牙'],
         'warnings': [''],
     },
     {
@@ -1026,7 +1026,7 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜'],
+        'tags': ['快手菜', '素菜', '省牙'],
         'warnings': [''],
     },
     {
@@ -1062,7 +1062,7 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '适合带饭'],
+        'tags': ['快手菜', '适合带饭', '省牙'],
         'warnings': [''],
     },
     {
@@ -1098,13 +1098,74 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '适合带饭'],
+        'tags': ['快手菜', '适合带饭', '省牙'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home029',
+        'name': '醋溜番瓜',
+        'ingrds0': [
+            {
+                'name': '番瓜(西葫芦)',
+                'amount': '1-2条',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '蒜片',
+                'amount': '少量',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '番瓜切片',
+            '蒜切片',
+        ],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '热锅凉油，蒜片炝锅，下番瓜炒软，加一勺盐，两勺醋，半勺糖调味出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '适合带饭', '素菜', '省牙'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home030',
+        'name': '西葫芦火腿丁',
+        'ingrds0': [
+            {
+                'name': '番瓜(西葫芦)',
+                'amount': '1-2条',
+            },
+            {
+                'name': '火腿',
+                'amount': '适量',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '葱花',
+                'amount': '少量',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '西葫芦切丁',
+            '火腿切丁',
+        ],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅，下番瓜丁，火腿丁翻炒，加一勺盐调味，放少量水盖锅稍焖一会儿，撒白胡椒出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '适合带饭', '省牙'],
         'warnings': [''],
     },
     /*
-    西葫芦
-        醋溜番瓜
-        西葫芦炒火腿丁
     蒜苔
         蒜苔炒肉丝
         蒜苔炒辣椒
@@ -1117,6 +1178,12 @@ export const homemade = [
         回锅肉
         农家小炒肉
         青蒜豆干炒肉
+    韭菜
+        韭菜炒鸡蛋
+        炒合菜
+        韭菜炒猪肝
+    韭黄
+        韭黄炒豆芽
     白菜
         醋溜白菜
         虾皮白菜
@@ -1162,12 +1229,6 @@ export const homemade = [
         虾仁西兰花
     紫甘蓝
         凉拌紫甘蓝
-    韭菜
-        韭菜炒鸡蛋
-        炒合菜
-        韭菜炒猪肝
-    韭黄
-        韭黄炒豆芽
     平菇
         凉拌平菇
     香菇

@@ -5,6 +5,7 @@ import { breakfast } from './recipes/breakfast';
 import { homemade } from './recipes/home';
 import { porridge } from './recipes/porridge';
 import { rice } from './recipes/rice';
+import { wheat } from './recipes/wheat';
 import { getRandomElementFromArray, getRandomElementsFromArray } from './utils';
 
 function getDishesList(sourceList, filters = []) {
@@ -95,7 +96,7 @@ function getMeal(peopleSize, mealType, filters) {
         let mainCandidates;
 
         if (mealType === consts.mealType.lunch) {
-            mainCandidates = getDishesList(rice);
+            mainCandidates = getDishesList(_.union(rice, wheat));
 
         } else if (mealType === consts.mealType.dinner) {
             mainCandidates = getDishesList(porridge);

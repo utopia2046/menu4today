@@ -299,7 +299,7 @@ export const porridge = [
         ],
         'comments': '麻豌豆是西北特产，可以网购',
         'utensil': '电饭锅',
-        'category': '甜食',
+        'category': '点心',
         'tags': [],
         'warnings': ['小众食材'],
     },
