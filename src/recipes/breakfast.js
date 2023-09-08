@@ -555,16 +555,235 @@ export const breakfast = [
         'tags': ['午餐', '野餐'],
         'warnings': [],
     },
+    {
+        'id': 'brkf017',
+        'name': '大饼夹鸡蛋',
+        'ingrds0': [
+            {
+                'name': '发面饼',
+                'amount': '1个',
+                'link': 'wheat002',
+            },
+            {
+                'name': '鸡蛋',
+                'amount': '1个',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '大饼上笼熥热，或者用烤箱烤热',
+            '煎一个鸡蛋，撒适量盐，夹进大饼',
+        ],
+        'comments': '大饼换成馒头也可以',
+        'utensil': '煎锅,蒸锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf018',
+        'name': '大饼夹牛肉',
+        'ingrds0': [
+            {
+                'name': '发面饼',
+                'amount': '1个',
+                'link': 'wheat002',
+            },
+            {
+                'name': '卤牛肉',
+                'amount': '几片',
+                'link': 'prck009',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '大饼从中间剖开，夹牛肉，上笼熥热，或者用烤箱烤热',
+        ],
+        'comments': '大饼换成馒头，或者煎饼卷着吃也可以',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf019',
+        'name': '大饼夹咸菜',
+        'ingrds0': [
+            {
+                'name': '发面饼',
+                'amount': '1个',
+                'link': 'wheat002',
+            },
+            {
+                'name': '什锦咸菜',
+                'amount': '少量',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '大饼从中间剖开，上笼熥热，或者用烤箱烤热，夹什锦咸菜',
+        ],
+        'comments': '大饼换成馒头也可以',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf020',
+        'name': '肉夹馍',
+        'ingrds0': [
+            {
+                'name': '发面饼',
+                'amount': '1个',
+                'link': 'wheat002',
+            },
+            {
+                'name': '卤肉',
+                'amount': '少量',
+                'link': 'prck010',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '卤肉加适量卤肉汁剁碎',
+            '烤箱预热160度，放进大饼烤5分钟热透，从中间剖开，夹剁碎的卤肉',
+        ],
+        'comments': '可以按个人喜好加青椒碎',
+        'utensil': '烤箱',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf021',
+        'name': '馒头夹香菇肉酱',
+        'ingrds0': [
+            {
+                'name': '馒头',
+                'amount': '1个',
+                'link': 'wheat001',
+            },
+            {
+                'name': '香菇肉酱',
+                'amount': '少量',
+                'link': 'prck005',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '馒头从中间剖开，夹上香菇肉酱，上笼熥热',
+        ],
+        'comments': '馒头换成大饼也可以',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf022',
+        'name': '馒头夹腐乳',
+        'ingrds0': [
+            {
+                'name': '馒头',
+                'amount': '1个',
+                'link': 'wheat001',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '馒头从中间剖开，上笼熥热，中间抹上一块腐乳夹着吃',
+        ],
+        'comments': '',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf023',
+        'name': '馒头夹牛肉辣酱',
+        'ingrds0': [
+            {
+                'name': '馒头',
+                'amount': '1个',
+                'link': 'wheat001',
+            },
+            {
+                'name': '牛肉蘑菇辣酱',
+                'amount': '少量',
+                'link': 'prck006',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '馒头从中间剖开，上笼熥热，中间夹上牛肉蘑菇辣酱',
+        ],
+        'comments': '',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf024',
+        'name': '馒头夹煎蛋肉饼',
+        'ingrds0': [
+            {
+                'name': '馒头',
+                'amount': '1个',
+                'link': 'wheat001',
+            },
+            {
+                'name': '肉臊子',
+                'amount': '少量',
+                'link': 'prck003',
+            },
+            {
+                'name': '鸡蛋',
+                'amount': '1个',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '馒头从中间剖开，上笼熥热',
+            '锅烧热，放一勺肉臊子炒散，鸡蛋打成蛋液浇在上面煎成蛋饼',
+            '肉末蛋饼夹在馒头里',
+        ],
+        'comments': '包饺子剩下的饺子馅可以用这种方法消耗掉',
+        'utensil': '蒸锅,煎锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
 ];
 /*
 中式汉堡，卷饼
-大饼夹鸡蛋
-大饼夹牛肉
-大饼夹咸菜
-肉夹馍
-馒头夹香菇肉酱
-馒头夹腐乳
-馒头夹牛肉辣酱
+
 烙饼卷鸡蛋
 烙饼卷鸡丝
 烙饼卷土豆丝
