@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 import _ from 'underscore';
 import consts from './consts';
 import { breakfast } from './recipes/breakfast';
-import { homemade } from './recipes/home';
+import { homemade } from './recipes/homemade';
 import { porridge } from './recipes/porridge';
 import { rice } from './recipes/rice';
 import { wheat } from './recipes/wheat';
@@ -11,8 +11,7 @@ import { getRandomElementFromArray, getRandomElementsFromArray } from './utils';
 function getDishesList(sourceList, filters = []) {
     const filteredList = [];
 
-    for (let i = 0; i < sourceList.length; i++) {
-        let dish = sourceList[i];
+    sourceList.forEach((dish) => {
         let isFit = !dish.disabled;
 
         if (filters && (filters.length > 0)) {
@@ -24,7 +23,7 @@ function getDishesList(sourceList, filters = []) {
         if (isFit) {
             filteredList.push(dish);
         }
-    }
+    });
 
     return filteredList;
 }

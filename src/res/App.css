@@ -190,3 +190,15 @@
   width: 120px;
   font-size: 10px;
 }
+
+.nav {
+  font-size: 10px;
+}
+
+.nav a {
+  padding: 0 6px;
+}
+
+.current-path {
+  font-weight: bold;
+}
