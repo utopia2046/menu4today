@@ -505,6 +505,3 @@ export const porridge = [
         'warnings': [],
     },
 ];
-/*
-
- */
