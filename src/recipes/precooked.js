@@ -497,16 +497,263 @@ export const preCooked = [
         'comments': '如果不用高压锅，用普通煮锅煮1小时也可以',
         'utensil': '炒锅,高压锅',
         'category': '半成品',
-        'tags': ['高热量', '高盐'],
+        'tags': [],
+        'warnings': ['高热量'],
+    },
+    {
+        'id': 'prck012',
+        'name': '高汤',
+        'ingrds0': [
+            {
+                'name': '鸡架',
+                'amount': '1个',
+            },
+            {
+                'name': '鸡骨头',
+                'amount': '几根',
+                'optional': true,
+            },
+            {
+                'name': '鱼头鱼骨',
+                'amount': '几根',
+                'optional': true,
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '姜',
+                'amount': '几片',
+            },
+            {
+                'name': '大葱',
+                'amount': '1根',
+            },
+            {
+                'name': '白胡椒',
+                'amount': '几颗',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '鸡架飞水去血沫',
+        ],
+        'cookDurInMin': 60,
+        'cookSteps': [
+            '把飞水过的鸡架或鸡骨鱼骨放进煮锅，加姜片、葱结、白胡椒、料酒、盐炖1小时左右',
+            '滤出清汤放冰箱冷藏',
+        ],
+        'comments': '高级的高汤还要扫汤，家里做不用那么讲究；做好的高汤可以用硅胶大冰格冻成高汤块，取用的时候比较方便',
+        'utensil': '煮锅',
+        'category': '半成品',
+        'tags': [],
         'warnings': [],
     },
-    /*
-
-    高汤
-    素高汤
-    出汁
-
-    红油
-    油泼辣子
-    */
+    {
+        'id': 'prck013',
+        'name': '骨汤',
+        'ingrds0': [
+            {
+                'name': '猪腔骨或腿骨',
+                'amount': '若干',
+            },
+            {
+                'name': '猪背油',
+                'amount': '一块',
+                'optional': true,
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '姜',
+                'amount': '几片',
+            },
+            {
+                'name': '大葱',
+                'amount': '1根',
+            },
+            {
+                'name': '花椒',
+                'amount': '几颗',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '腔骨或腿骨请卖肉的帮忙砸开，飞水去血沫',
+        ],
+        'cookDurInMin': 120,
+        'cookSteps': [
+            '把飞水过的骨头放进煮锅，加姜片、葱结、花椒、盐、料酒、白醋炖2小时左右',
+            '滤出清汤放冰箱冷藏',
+        ],
+        'comments': '如果想要浓厚的白汤，可以加猪背上的硬脂，骨汤里有大量脂肪颗粒就会乳白，不过热量很高不宜常吃',
+        'utensil': '煮锅',
+        'category': '半成品',
+        'tags': [],
+        'warnings': ['高热量', '高油', '高盐'],
+    },
+    {
+        'id': 'prck014',
+        'name': '素高汤',
+        'ingrds0': [
+            {
+                'name': '干茶树菇',
+                'amount': '几颗',
+            },
+            {
+                'name': '干牛肝菌',
+                'amount': '几片',
+            },
+            {
+                'name': '干竹荪',
+                'amount': '几颗',
+            },
+            {
+                'name': '羊肚菌',
+                'amount': '几颗',
+            },
+            {
+                'name': '虫草花',
+                'amount': '少量',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '姜',
+                'amount': '几片',
+            },
+            {
+                'name': '白胡椒',
+                'amount': '几颗',
+            },
+        ],
+        'prepDurInMin': 30,
+        'prepSteps': [
+            '干蘑菇在清水里泡半小时左右，洗净沙子',
+        ],
+        'cookDurInMin': 60,
+        'cookSteps': [
+            '蘑菇放进煮锅，加姜片、白胡椒、盐炖1小时左右',
+            '滤出清汤放冰箱冷藏',
+        ],
+        'comments': '可以买配好的菌菇包；煮过的蘑菇可以放在面条或者米粉里，或者弄个蘸碟直接吃',
+        'utensil': '煮锅',
+        'category': '半成品',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'prck015',
+        'name': '出汁',
+        'ingrds0': [
+            {
+                'name': '昆布',
+                'amount': '几片',
+            },
+            {
+                'name': '鲣鱼片',
+                'amount': '几片',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 240,
+        'prepSteps': [
+            '干昆布泡4小时以上',
+        ],
+        'cookDurInMin': 60,
+        'cookSteps': [
+            '小火煮沸昆布汤，放鲣鱼片，关火',
+            '等鲣鱼片沉到锅底，滤出清汤',
+        ],
+        'comments': '以雅本妮子装神弄鬼的做派也是有各种讲究，家里做不用太矫情，简单的味道就好',
+        'utensil': '煮锅',
+        'category': '半成品',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'prck016',
+        'name': '红油',
+        'ingrds0': [
+            {
+                'name': '二荆条',
+                'amount': '1把',
+            },
+            {
+                'name': '小米辣',
+                'amount': '1把',
+            },
+            {
+                'name': '白芝麻',
+                'amount': '少量',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '小葱',
+                'amount': '几根',
+            },
+            {
+                'name': '姜',
+                'amount': '几片',
+            },
+            {
+                'name': '花椒',
+                'amount': '几个',
+            },
+            {
+                'name': '八角',
+                'amount': '1个',
+            },
+            {
+                'name': '香叶',
+                'amount': '几片',
+            },
+            {
+                'name': '桂皮',
+                'amount': '1片',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '干辣椒剪段',
+        ],
+        'cookDurInMin': 10,
+        'cookSteps': [
+            '锅里不放油，炒香干辣椒',
+            '炒干的辣椒捣碎，加白芝麻，一勺盐，放进铁质辣椒罐',
+            '锅里烧热菜籽油，熟过之后放葱、姜、花椒、八角、香叶、桂皮炸香，把热油倒进辣椒罐',
+        ],
+        'comments': '等油凉了可以按个人口味加一勺白糖或者味精',
+        'utensil': '炒锅',
+        'category': '半成品',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'prck017',
+        'name': '油泼辣子',
+        'ingrds0': [
+            {
+                'name': '辣椒面',
+                'amount': '1袋',
+            },
+            {
+                'name': '白芝麻',
+                'amount': '少量',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [],
+        'cookDurInMin': 10,
+        'cookSteps': [
+            '铁质辣椒罐里放辣椒面，白芝麻，一勺盐，一勺花椒粉，一勺十三香粉',
+            '锅里烧热油，倒进辣椒罐',
+        ],
+        'comments': '等油凉了可以按个人口味加一勺白糖或者味精',
+        'utensil': '炒锅',
+        'category': '半成品',
+        'tags': [],
+        'warnings': [],
+    },
 ];
