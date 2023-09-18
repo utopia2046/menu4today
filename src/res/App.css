@@ -202,3 +202,53 @@
 .current-path {
   font-weight: bold;
 }
+
+.list {
+  max-width: 800px;
+  min-width: 400px;
+  background-color: #e8e4d9;
+  padding: 20px;
+}
+
+.categories {
+  background-color: #499D91;
+  font-size: 14px;
+  color: white;
+  line-height: 40px;
+  margin: 20px 0;
+}
+
+.category-item {
+  padding: 20px;
+  line-height: 40px;
+}
+
+.category-item.is-selected {
+  font-weight: bold;
+  background-color: #027373;
+}
+
+.dish-container {
+  font-size: 14px;
+}
+
+.dish-title {
+  vertical-align: baseline;
+}
+
+.dish-id {
+  width: 80px;
+  color: #027373;
+}
+
+.dish-category {
+  width: 60px;
+}
+
+.dish-utensil {
+  width: 80px;
+}
+
+.dish-duration {
+  width: 100px;
+}

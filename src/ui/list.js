@@ -44,25 +44,30 @@ export default function List() {
         text: '半成品',
     }];
 
-    const [selectedCategory, setSelectedCategory] = useState(homemade);
+    const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
     const catElements = categories.map(category =>
-        <span key={category.key} onClick={() => changeCategory(category.key)}>{category.text}</span>);
+        <span key={category.key}
+            className={(selectedCategory.key === category.key) ? 'category-item is-selected' : 'category-item'}
+            onClick={(evt) => changeCategory(category.key, evt)}>
+            {category.text}
+            </span>);
 
-    const dishElements = selectedCategory.map(dish => 
+    const dishElements = selectedCategory.items.map(dish => 
         <Dish key={dish.id} dish={dish} showMoreInList={true} />
     );
 
-    function changeCategory(key) {
+    function changeCategory(key, evt) {
         const clickedCategory = _.find(categories, (item) => {return item.key === key});
-        setSelectedCategory(clickedCategory.items);
+        
+        setSelectedCategory(clickedCategory);
     }
 
     return (
         <div className='list'>
             <Nav />
 
-            <div>
+            <div className='categories'>
                 {catElements}
             </div>
 
