@@ -49,7 +49,7 @@ export default function List() {
     const catElements = categories.map(category =>
         <span key={category.key}
             className={(selectedCategory.key === category.key) ? 'category-item is-selected' : 'category-item'}
-            onClick={(evt) => changeCategory(category.key, evt)}>
+            onClick={() => changeCategory(category.key)}>
             {category.text}
             </span>);
 
@@ -57,7 +57,7 @@ export default function List() {
         <Dish key={dish.id} dish={dish} showMoreInList={true} />
     );
 
-    function changeCategory(key, evt) {
+    function changeCategory(key) {
         const clickedCategory = _.find(categories, (item) => {return item.key === key});
         
         setSelectedCategory(clickedCategory);

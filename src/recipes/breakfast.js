@@ -780,11 +780,35 @@ export const breakfast = [
         'tags': [],
         'warnings': [],
     },
+    {
+        'id': 'brkf025',
+        'name': '咖喱三明治',
+        'ingrds0': [
+            {
+                'name': '切片面包',
+                'amount': '2片',
+            },
+            {
+                'name': '咖喱鸡',
+                'amount': '少量',
+                'link': 'home031',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '切片面包抹上隔夜的咖喱，放烤箱5分钟左右烤热',
+        ],
+        'comments': '不加热也可以',
+        'utensil': '烤箱',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
 ];
 /*
-中式汉堡，卷饼
-
-咖喱三明治
 
 烙饼卷鸡蛋
 烙饼卷鸡丝
