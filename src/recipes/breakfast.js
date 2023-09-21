@@ -807,12 +807,144 @@ export const breakfast = [
         'tags': [],
         'warnings': [],
     },
+    {
+        'id': 'brkf026',
+        'name': '煎饼卷鸡蛋',
+        'ingrds0': [
+            {
+                'name': '煎饼',
+                'amount': '1片',
+                'link': 'wheat006',
+            },
+            {
+                'name': '鸡蛋',
+                'amount': '1个',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '葱花',
+                'amount': '少量',
+                'optional': true,
+            },
+        ],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '煎饼上笼熥热',
+            '鸡蛋打散，加一点儿盐，葱花炝锅，下蛋液炒成蛋花',
+        ],
+        'comments': '',
+        'utensil': '蒸锅,炒锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf027',
+        'name': '煎饼卷鸡丝',
+        'ingrds0': [
+            {
+                'name': '煎饼',
+                'amount': '1片',
+                'link': 'wheat006',
+            },
+            {
+                'name': '清炖鸡',
+                'amount': '适量',
+                'link': 'feast002',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '葱丝',
+                'amount': '少量',
+                'optional': true,
+            },
+            {
+                'name': '甜面酱',
+                'amount': '少量',
+                'optional': true,
+            },
+        ],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '煎饼上笼熥热',
+            '清炖鸡鸡架上剩的肉用手撕成筷子粗的鸡丝，按个人口味加葱丝抹甜面酱卷饼',
+        ],
+        'comments': '',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': [],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf028',
+        'name': '煎饼卷土豆丝',
+        'ingrds0': [
+            {
+                'name': '煎饼',
+                'amount': '1片',
+                'link': 'wheat006',
+            },
+            {
+                'name': '醋溜土豆丝',
+                'amount': '适量',
+                'link': 'home014',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '葱丝',
+                'amount': '少量',
+                'optional': true,
+            },
+            {
+                'name': '甜面酱',
+                'amount': '少量',
+                'optional': true,
+            },
+        ],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '煎饼上笼熥热，卷醋溜土豆丝或者凉拌土豆丝吃',
+        ],
+        'comments': '因为是素的，凉了也好吃，适合野餐',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': ['野餐'],
+        'warnings': [],
+    },
+    {
+        'id': 'brkf029',
+        'name': '煎饼卷香肠',
+        'ingrds0': [
+            {
+                'name': '煎饼',
+                'amount': '1片',
+                'link': 'wheat006',
+            },
+            {
+                'name': '热狗肠',
+                'amount': '1根',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 0,
+        'prepSteps': [],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '煎饼上笼熥热，卷香肠吃',
+        ],
+        'comments': '适合野餐',
+        'utensil': '蒸锅',
+        'category': '主食',
+        'tags': ['野餐'],
+        'warnings': [],
+    },
 ];
-/*
-
-烙饼卷鸡蛋
-烙饼卷鸡丝
-烙饼卷土豆丝
-烙饼卷黑椒牛柳
-烙饼卷京酱肉丝
-*/
