@@ -1255,15 +1255,186 @@ export const homemade = [
         'tags': ['适合带饭', '省牙'],
         'warnings': [''],
     },
+    {
+        'id': 'home033',
+        'name': '蒜苔炒肉丝',
+        'ingrds0': [
+            {
+                'name': '蒜苔',
+                'amount': '1把',
+            },
+            {
+                'name': '猪瘦肉',
+                'amount': '1块',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 10,
+        'prepSteps': [
+            '猪瘦肉切丝，加盐、料酒、生抽、水淀粉、少许油抓匀',
+            '蒜苔揪掉胡子，洗净切寸段',
+        ],
+        'cookDurInMin': 10,
+        'cookSteps': [
+            '热锅凉油，下腌好的瘦肉丝，用筷子拨散，变色后铲出',
+            '锅里放少量油，下蒜苔翻炒，加盐调味，沿锅边略加一点儿水，盖锅稍焖一会儿',
+            '炒好的肉丝下锅，和蒜苔一起翻炒均匀出锅',
+        ],
+        'comments': '喜欢脆嫩半生口儿的可以不加水，个人喜欢熟一点的所以会加水焖一会儿',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home034',
+        'name': '蒜苔炒辣椒',
+        'ingrds0': [
+            {
+                'name': '蒜苔',
+                'amount': '1把',
+            },
+            {
+                'name': '辣椒',
+                'amount': '1根',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '蒜苔揪掉胡子，洗净切寸段',
+            '辣椒切滚刀丝',
+        ],
+        'cookDurInMin': 10,
+        'cookSteps': [
+            '热锅凉油，下蒜苔翻炒到断生，加盐调味',
+            '下辣椒丝一起翻炒，加一点儿生抽调味出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['素菜', '快手菜', '适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home035',
+        'name': '蒜苔炒扇贝',
+        'ingrds0': [
+            {
+                'name': '蒜苔',
+                'amount': '1把',
+            },
+            {
+                'name': '冷冻扇贝肉',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 10,
+        'prepSteps': [
+            '蒜苔揪掉胡子，洗净切寸段',
+            '扇贝解冻，去内脏洗净控干',
+        ],
+        'cookDurInMin': 10,
+        'cookSteps': [
+            '热锅凉油，下扇贝和蒜苔一起翻炒',
+            '到扇贝发白，蒜苔变绿，加少量盐，生抽调味出锅',
+        ],
+        'comments': '蒜苔很适合和小海鲜一起炒，用同样的做法炒小墨鱼或者鱿鱼脚也可以',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home036',
+        'name': '韭苔炒辣椒',
+        'ingrds0': [
+            {
+                'name': '韭苔',
+                'amount': '1把',
+            },
+            {
+                'name': '辣椒',
+                'amount': '1根',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '韭苔洗净切寸段',
+            '辣椒切滚刀丝',
+        ],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '热锅凉油，韭苔和辣椒丝一起翻炒，加盐、生抽调味出锅',
+        ],
+        'comments': '韭苔很容易熟，不用炒太久，到七八分熟出锅装盘后的余温还可以再后熟一会儿',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home037',
+        'name': '韭苔炒鸡蛋',
+        'ingrds0': [
+            {
+                'name': '蒜苔',
+                'amount': '1把',
+            },
+            {
+                'name': '鸡蛋',
+                'amount': '2个',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '韭苔洗净切寸段',
+            '鸡蛋打散',
+        ],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '大火烧热锅，下蛋液炒成蛋花，铲出待用',
+            '下蒜苔略翻炒，加盐调味，加炒好的鸡蛋一起翻匀出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home038',
+        'name': '韭苔炒蛤蜊',
+        'ingrds0': [
+            {
+                'name': '蒜苔',
+                'amount': '1把',
+            },
+            {
+                'name': '花蛤',
+                'amount': '若干',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '韭苔洗净切寸段',
+            '蛤蜊吐净沙子',
+        ],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '大火烧热锅，下蛤蜊炒到开口，喷料酒去腥，加盐调味，下韭苔一起翻炒出锅',
+        ],
+        'comments': '同样的做法也可以用来炒海瓜子',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜'],
+        'warnings': [''],
+    },
     /*
-    蒜苔
-        蒜苔炒肉丝
-        蒜苔炒辣椒
-        蒜苔炒扇贝
-    韭苔
-        韭苔炒辣椒
-        韭苔炒鸡蛋
-        韭苔炒蛤蜊
     蒜苗
         回锅肉
         农家小炒肉
