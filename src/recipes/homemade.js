@@ -300,7 +300,7 @@ export const homemade = [
         'comments': '如果有炒肉片也可以加点儿，就成了肉片地三鲜',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['素菜'],
+        'tags': ['素菜', '适合带饭'],
         'warnings': ['口气预警', '宽油预警'],
     },
     {
@@ -605,7 +605,7 @@ export const homemade = [
         'comments': '可以加肉丝，就成了肉丝青椒土豆，很适合卷煎饼吃',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['素菜', '快手菜', '适合带饭'],
+        'tags': ['素菜', '快手菜', '适合带饭', '煎饼伴侣'],
         'warnings': [''],
     },
     {
@@ -681,7 +681,7 @@ export const homemade = [
         'comments': '没有肉丝的青椒肉丝还能叫青椒肉丝吗',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '适合带饭'],
+        'tags': ['快手菜', '适合带饭', '煎饼伴侣'],
         'warnings': [''],
     },
     {
@@ -893,7 +893,7 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '适合带饭'],
+        'tags': ['快手菜', '适合带饭', '煎饼伴侣'],
         'warnings': [''],
     },
     {
@@ -1473,7 +1473,7 @@ export const homemade = [
         'comments': '郫县豆瓣酱买回来后可以用搅拌机打碎再冷藏，这样省去每次用的时候剁细的步骤',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜'],
+        'tags': ['快手菜', '适合带饭'],
         'warnings': ['口气预警'],
     },
     {
@@ -1513,7 +1513,7 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜'],
+        'tags': ['快手菜', '适合带饭'],
         'warnings': ['口气预警'],
     },
     {
@@ -1558,7 +1558,7 @@ export const homemade = [
         'comments': '白豆腐干或五香豆腐干都可以',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜'],
+        'tags': ['快手菜', '适合带饭'],
         'warnings': ['口气预警'],
     },
     {
@@ -1588,7 +1588,7 @@ export const homemade = [
         'comments': '韭菜出锅装盘后余温还会后熟，不用炒太久',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '春天'],
+        'tags': ['快手菜', '春天', '煎饼伴侣'],
         'warnings': ['口气预警'],
     },
     {
@@ -1634,7 +1634,7 @@ export const homemade = [
         'comments': '也可以放泡发的粉丝，是春饼的完美搭档',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['春天'],
+        'tags': ['春天', '煎饼伴侣'],
         'warnings': ['口气预警'],
     },
     {
@@ -1777,7 +1777,7 @@ export const homemade = [
         'comments': '如果能买到黄瓜条最好，是最嫩适合炒的一块',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜'],
+        'tags': ['快手菜', '煎饼伴侣'],
         'warnings': [''],
     },
     {
@@ -1814,7 +1814,7 @@ export const homemade = [
         'comments': '',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '冬天', '素菜'],
+        'tags': ['快手菜', '冬天', '素菜', '适合带饭', '省牙'],
         'warnings': [''],
     },
     {
@@ -1849,7 +1849,7 @@ export const homemade = [
         'comments': '如果喜欢虾酱的话也可以放一小勺，记得虾皮和虾酱都有盐，适量减少放盐的量',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '冬天'],
+        'tags': ['快手菜', '冬天', '适合带饭', '省牙'],
         'warnings': [''],
     },
     {
@@ -1885,7 +1885,7 @@ export const homemade = [
         'comments': '喜欢浓稠口感的人可以最后勾一点儿薄芡，喜欢清爽口感的不勾芡也很好',
         'utensil': '炒锅',
         'category': '炒菜',
-        'tags': ['快手菜', '冬天', '素菜'],
+        'tags': ['快手菜', '冬天', '素菜', '适合带饭', '省牙'],
         'warnings': [''],
     },
     {
@@ -1999,12 +1999,118 @@ export const homemade = [
         'comments': '大烩菜里什么都可以加，各种绿叶菜比如茼蒿、生菜、黄心菜、奶白菜，炸丸子换成鱼丸或者小酥肉也可以，豆腐可以换成冻豆腐或油豆泡，各种蘑菇都可以往里放，主打一个来者不拒，喧腾热闹',
         'utensil': '炒锅',
         'category': '炖菜',
-        'tags': ['冬天'],
+        'tags': ['冬天', '适合带饭', '省牙'],
         'warnings': [],
     },
+    {
+        'id': 'home054',
+        'name': '香菇油菜',
+        'ingrds0': [
+            {
+                'name': '油菜',
+                'amount': '1把',
+            },
+            {
+                'name': '香菇',
+                'amount': '4-5朵',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1节',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '油菜洗净，掰成小块，分开帮和叶子',
+            '香菇切片',
+            '大葱切末',
+        ],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '葱花炝锅，下香菇炒软，加半勺盐调味',
+            '下油菜帮子炒熟，下一勺蚝油调味，下油菜叶子翻炒变色出锅',
+        ],
+        'comments': '用水发干香菇也可以',
+        'utensil': '',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜', '适合带饭', '省牙'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home055',
+        'name': '黑椒牛柳',
+        'ingrds0': [
+            {
+                'name': '牛里脊',
+                'amount': '1块',
+            },
+            {
+                'name': '青红椒',
+                'amount': '1-2根',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '洋葱',
+                'amount': '几片',
+            },
+        ],
+        'prepDurInMin': 15,
+        'prepSteps': [
+            '牛里脊垂直肌肉纹理方向切丝，加盐、黑胡椒、生抽、蚝油、水淀粉、油抓匀入味',
+            '青红椒去蒂去籽切粗丝',
+            '洋葱切丝',
+        ],
+        'cookDurInMin': 10,
+        'cookSteps': [
+            '大火烧热锅，倒入少量底油，下腌好的牛肉炒散',
+            '下洋葱丝、青红椒快速翻炒，加盐、蚝油、黑胡椒调味出锅',
+        ],
+        'comments': '很适合用来卷饼',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '煎饼伴侣', '适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home056',
+        'name': '京酱肉丝',
+        'ingrds0': [
+            {
+                'name': '猪里脊',
+                'amount': '1块',
+            },
+            {
+                'name': '大葱',
+                'amount': '1根',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '豆腐皮',
+                'amount': '1片',
+            },
+        ],
+        'prepDurInMin': 15,
+        'prepSteps': [
+            '猪里脊切丝，加盐、花椒、生抽、蚝油、水淀粉、油抓匀入味',
+            '大葱切丝',
+            '豆腐皮切巴掌大方块，用开水烫过去豆腥',
+        ],
+        'cookDurInMin': 10,
+        'cookSteps': [
+            '大火烧热锅，倒入少量底油，下腌好的肉丝炒散',
+            '下一大勺甜面酱，翻炒让它均匀地裹住肉丝，略焦化产生甜香，下葱丝翻匀出锅',
+        ],
+        'comments': '可以用豆腐皮卷肉丝吃，也可以用煎饼卷肉丝，喜欢生葱的葱丝可以不用炒，个人喜欢断生的',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '煎饼伴侣'],
+        'warnings': [''],
+    },
     /*
-    油菜
-        香菇油菜
     茼蒿
         蒜蓉蒿子杆
         蒿子杆炒面筋
