@@ -2110,15 +2110,211 @@ export const homemade = [
         'tags': ['快手菜', '煎饼伴侣'],
         'warnings': [''],
     },
+    {
+        'id': 'home057',
+        'name': '蒜蓉茼蒿',
+        'ingrds0': [
+            {
+                'name': '茼蒿',
+                'amount': '1把',
+            },
+            {
+                'name': '大蒜',
+                'amount': '2-3瓣',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '茼蒿去根洗净切段',
+            '大蒜去皮切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，蒜末炝锅',
+            '下茼蒿快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home058',
+        'name': '蒿子杆炒面筋',
+        'ingrds0': [
+            {
+                'name': '茼蒿',
+                'amount': '1把',
+            },
+            {
+                'name': '面筋',
+                'amount': '1小块',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '茼蒿去根洗净切段',
+            '面筋切小块',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅，下面筋炒透',
+            '下茼蒿快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '面筋换成腐竹或者豆腐皮也可以',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home059',
+        'name': '清炒芥兰',
+        'ingrds0': [
+            {
+                'name': '芥兰',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '芥兰去掉根部老皮，斜切成马耳段',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅',
+            '下芥兰快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home060',
+        'name': '辣炒芥兰',
+        'ingrds0': [
+            {
+                'name': '芥兰',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '干红辣椒',
+                'amount': '2-3根',
+            },
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+            {
+                'name': '大蒜',
+                'amount': '1-2瓣',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '芥兰去掉根部老皮，斜切成马耳段',
+            '葱蒜切末',
+            '干红辣椒去籽去蒂剪成段',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花蒜末辣椒炝锅',
+            '下芥兰快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '如果不是要纯素的话，用一点荤油炒味道更好',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home061',
+        'name': '白灼芥兰',
+        'ingrds0': [
+            {
+                'name': '芥兰',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '红辣椒',
+                'amount': '1-2根',
+            },
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '芥兰去掉根部老皮，切成10厘米左右的段',
+            '大葱切丝',
+            '红辣椒斜切圈',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '烧一锅开水，撒一勺盐，滴一点儿油，下芥兰烫到变色，捞出控干水分装盘',
+            '炒锅里用葱丝红辣椒炝锅，下一勺生抽或者蚝油调成味汁，浇在芥兰上出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅,煮锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home062',
+        'name': '清炒菜苔',
+        'ingrds0': [
+            {
+                'name': '油菜苔',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '菜苔去掉根部老皮，斜切成马耳段',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅',
+            '下菜苔快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '南方有一种红菜苔，比起绿菜苔更有种特别的清香，北方很少见到',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
     /*
-    茼蒿
-        蒜蓉蒿子杆
-        蒿子杆炒面筋
-    芥兰
-        清炒芥兰
-        辣炒芥兰
-    油菜苔
-        清炒菜苔
     空心菜
         清炒空心菜
         辣炒空心菜
