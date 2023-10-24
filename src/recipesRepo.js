@@ -6,6 +6,8 @@ import { homemade } from './recipes/homemade';
 import { porridge } from './recipes/porridge';
 import { rice } from './recipes/rice';
 import { wheat } from './recipes/wheat';
+import { noodle } from './recipes/noodle';
+import { soup } from './recipes/soup';
 import { getRandomElementFromArray, getRandomElementsFromArray } from './utils';
 
 function getDishesList(sourceList, filters = []) {
@@ -98,13 +100,17 @@ function getMeal(peopleSize, mealType, filters) {
             mainCandidates = getDishesList(_.union(rice, wheat));
 
         } else if (mealType === consts.mealType.dinner) {
-            mainCandidates = getDishesList(porridge);
+            mainCandidates = getDishesList(_.union(porridge, noodle));
         }
 
         const main = getRandomElementFromArray(mainCandidates);
         const caiCandidates = getDishesList(homemade, filters);
         const cai = getRandomElementsFromArray(caiCandidates, dishNumber);
         const dishes = _.union([main], cai);
+        if ((peopleSize === consts.peopleSize.single) && (mealType === consts.mealType.lunch) {
+            const soup = getRandomElementsFromArray(getDishesList(soup), 1);
+            dishes = _.union(dishes, soup);
+        }
 
         return getMealMenu(mealType, dishes);
     }

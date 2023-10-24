@@ -2308,19 +2308,227 @@ export const homemade = [
             '热锅凉油，葱花炝锅',
             '下菜苔快速翻炒，断生后撒盐出锅',
         ],
-        'comments': '南方有一种红菜苔，比起绿菜苔更有种特别的清香，北方很少见到',
+        'comments': '南方有一种红菜苔，比起绿菜苔更有种特别的清香，春节左右有，北方很少见到',
         'utensil': '炒锅',
         'category': '炒菜',
         'tags': ['快手菜', '素菜'],
         'warnings': [''],
     },
+    {
+        'id': 'home063',
+        'name': '清炒空心菜',
+        'ingrds0': [
+            {
+                'name': '空心菜',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '空心菜洗净切段',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅',
+            '下空心菜快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home064',
+        'name': '辣炒空心菜',
+        'ingrds0': [
+            {
+                'name': '空心菜',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '干红辣椒',
+                'amount': '2-3根',
+            },
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+            {
+                'name': '大蒜',
+                'amount': '1-2瓣',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '空心菜洗净切段',
+            '葱蒜切末',
+            '干红辣椒去籽去蒂剪成段',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花蒜末辣椒炝锅',
+            '下空心菜快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home065',
+        'name': '蒜蓉苋菜',
+        'ingrds0': [
+            {
+                'name': '苋菜',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大蒜',
+                'amount': '2-3瓣',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '苋菜洗净切段',
+            '大蒜切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '烧热锅，下半勺猪油化开，蒜末炝锅',
+            '下苋菜快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '用一点油渣味道更好',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home066',
+        'name': '清炒地瓜秧',
+        'ingrds0': [
+            {
+                'name': '地瓜秧',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '地瓜秧洗净揪段',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅',
+            '下地瓜秧快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home067',
+        'name': '清炒鸡毛菜',
+        'ingrds0': [
+            {
+                'name': '鸡毛菜',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '鸡毛菜洗净控干',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅',
+            '下鸡毛菜快速翻炒，断生后撒盐出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home068',
+        'name': '凉拌鸡毛菜',
+        'ingrds0': [
+            {
+                'name': '鸡毛菜',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '鸡毛菜洗净控干',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '烧一锅开水，撒一勺盐，滴一点儿油，下鸡毛菜烫到变色，捞出控干水分',
+            '一勺生抽，一勺醋，一勺红油，调成味汁，拌匀即可',
+        ],
+        'comments': '',
+        'utensil': '煮锅',
+        'category': '凉菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home069',
+        'name': '凉拌豆苗',
+        'ingrds0': [
+            {
+                'name': '豆苗',
+                'amount': '1把',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '豆苗洗净控干',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '烧一锅开水，撒一勺盐，滴一点儿油，下豆苗烫到变色，捞出控干水分',
+            '一勺生抽，一勺醋，一勺红油，调成味汁，拌匀即可',
+        ],
+        'comments': '',
+        'utensil': '煮锅',
+        'category': '凉菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
     /*
-    空心菜
-        清炒空心菜
-        辣炒空心菜
-    蒜蓉苋菜
-    地瓜秧
-        清炒地瓜秧
     西芹
         西芹炒肉片
         西芹炒豆干
