@@ -2528,11 +2528,120 @@ export const homemade = [
         'tags': ['快手菜', '素菜'],
         'warnings': [''],
     },
+    {
+        'id': 'home070',
+        'name': '西芹炒肉片',
+        'ingrds0': [
+            {
+                'name': '西芹',
+                'amount': '1颗',
+            },
+            {
+                'name': '炒肉片',
+                'link': 'prck004',
+                'amount': '适量',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '西芹撕去老叶老筋，洗净控干，斜切成片',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅',
+            '下芹菜翻炒，断生后撒盐和生抽调味，加适量炒肉片翻炒均匀出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home071',
+        'name': '西芹炒豆干',
+        'ingrds0': [
+            {
+                'name': '西芹',
+                'amount': '1颗',
+            },
+            {
+                'name': '豆腐干',
+                'amount': '3-4块',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '大葱',
+                'amount': '1段',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '西芹撕去老叶老筋，洗净控干，斜切成片',
+            '豆腐干切片',
+            '大葱切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，葱花炝锅',
+            '下芹菜和豆腐干一起翻炒，断生后撒盐和生抽调味出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜', '适合带饭'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home072',
+        'name': '西芹炒牛柳',
+        'ingrds0': [
+            {
+                'name': '西芹',
+                'amount': '1颗',
+            },
+            {
+                'name': '牛里脊',
+                'amount': '1块',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '洋葱',
+                'amount': '几片',
+            },
+            {
+                'name': '青红椒',
+                'amount': '1-2根',
+            },
+        ],
+        'prepDurInMin': 15,
+        'prepSteps': [
+            '西芹撕去老叶老筋，洗净控干，斜切成片',
+            '牛里脊垂直肌肉纹理方向切粗丝，加盐、黑胡椒、生抽、蚝油、水淀粉、油抓匀入味',
+            '洋葱切丝',
+            '青红椒去蒂去籽切粗丝',
+        ],
+        'cookDurInMin': 5,
+        'cookSteps': [
+            '热锅凉油，下腌好的牛肉炒散',
+            '下芹菜、洋葱和青红椒一起翻炒，断生后撒盐、生抽、黑胡椒调味出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '适合带饭'],
+        'warnings': [''],
+    },
     /*
-    西芹
-        西芹炒肉片
-        西芹炒豆干
-        西芹炒牛柳
     香芹
         香芹炒鸡丝
         香芹肉末

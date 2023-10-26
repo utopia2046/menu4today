@@ -96,7 +96,7 @@ export const noodle = [
                 'amount': '50克',
             },
             {
-                'name': '甜面酱酱',
+                'name': '甜面酱',
                 'amount': '50克',
             },
             {
@@ -116,7 +116,7 @@ export const noodle = [
         ],
         'prepDurInMin': 5,
         'prepSteps': [
-            '干黄酱用水泻开',
+            '干黄酱用水澥开',
             '葱姜切末',
         ],
         'cookDurInMin': 20,
@@ -131,11 +131,63 @@ export const noodle = [
         'tags': [''],
         'warnings': [''],
     },
+    {
+        'id': 'noodle004',
+        'name': '杂酱面',
+        'ingrds0': [
+            {
+                'name': '猪肉(三肥七瘦)',
+                'amount': '500克',
+            },
+            {
+                'name': '黄豆酱',
+                'amount': '50克',
+            },
+            {
+                'name': '甜面酱',
+                'amount': '50克',
+            },
+            {
+                'name': '芝麻花生酱',
+                'amount': '50克',
+            },
+            {
+                'name': '大葱',
+                'amount': '1根',
+            },
+            {
+                'name': '黄瓜',
+                'amount': '1根',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '姜末',
+                'amount': '适量',
+            },
+        ],
+        'prepDurInMin': 10,
+        'prepSteps': [
+            '猪肉去皮，分开肥瘦，切成小丁',
+            '芝麻花生酱加水澥开',
+            '葱姜切末',
+        ],
+        'cookDurInMin': 20,
+        'cookSteps': [
+            '烧热锅，下少量底油，下肥肉丁，慢慢煸出猪油',
+            '在煸出的油里下黄豆酱、甜面酱、芝麻花生酱炒香',
+            '下瘦肉炒散，加姜末，烹料酒去腥，加一点儿水，慢火熬一会儿',
+            '煮手擀面或者机器切面，铺上黄瓜丝，浇上炸酱',
+        ],
+        'comments': '炸酱可以一次多熬一点儿，除了拌面条，夹在馒头里吃也很香',
+        'utensil': '煮锅',
+        'category': '主食',
+        'tags': [''],
+        'warnings': [''],
+    },
 ];
 
 /*
-炸酱面
-杂酱面
 茄汁肉酱面
 臊子面
 香菇肉末面
