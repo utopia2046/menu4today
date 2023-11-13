@@ -2735,6 +2735,62 @@ export const homemade = [
         'tags': ['快手菜', '适合带饭', '下饭菜'],
         'warnings': [''],
     },
+    {
+        'id': 'home075',
+        'name': '蚝油生菜',
+        'ingrds0': [
+            {
+                'name': '生菜',
+                'amount': '1颗',
+            },
+        ],
+        'ingrds1': [
+            {
+                'name': '蒜末',
+                'amount': '少量',
+            },
+        ],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '生菜撕成片，洗净控干',
+            '大蒜切末',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '热锅凉油，蒜末炝锅',
+            '大火爆炒生菜，到断生撒盐和蚝油调味出锅',
+        ],
+        'comments': '',
+        'utensil': '炒锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
+    {
+        'id': 'home076',
+        'name': '白灼生菜',
+        'ingrds0': [
+            {
+                'name': '生菜',
+                'amount': '1颗',
+            },
+        ],
+        'ingrds1': [],
+        'prepDurInMin': 5,
+        'prepSteps': [
+            '生菜撕成片',
+        ],
+        'cookDurInMin': 3,
+        'cookSteps': [
+            '煮锅里烧开半锅水，倒入生菜，用笊篱翻搅，到叶子变色立刻捞出晾凉装盘',
+            '炒锅里倒一勺水，一勺蚝油，小半勺盐，半勺糖，水滚了浇在烫好的生菜上',
+        ],
+        'comments': '也可以在炒锅里烧一丁点儿油，烧热关火，倒蚝油、生抽、糖调味作为浇汁。个人更喜欢不用油的版本',
+        'utensil': '炒锅,煮锅',
+        'category': '炒菜',
+        'tags': ['快手菜', '素菜'],
+        'warnings': [''],
+    },
     /*
     菠菜
         凉拌菠菜老醋花生
