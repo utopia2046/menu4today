@@ -992,7 +992,6 @@ export const noodle = [
     },
 ];
 /*
-豆角焖面
 
 米粉米线
 
